@@ -1,0 +1,186 @@
+[gd_resource type="SpriteFrames" load_steps=97 format=2]
+
+[ext_resource path="res://assets/Player/Armor_29.png" type="Texture" id=1]
+[ext_resource path="res://assets/Player/Armor_87.png" type="Texture" id=2]
+[ext_resource path="res://assets/Player/Armor_40.png" type="Texture" id=3]
+[ext_resource path="res://assets/Player/Armor_43.png" type="Texture" id=4]
+[ext_resource path="res://assets/Player/Armor_69.png" type="Texture" id=5]
+[ext_resource path="res://assets/Player/Armor_82.png" type="Texture" id=6]
+[ext_resource path="res://assets/Player/Armor_09.png" type="Texture" id=7]
+[ext_resource path="res://assets/Player/Armor_03.png" type="Texture" id=8]
+[ext_resource path="res://assets/Player/Armor_12.png" type="Texture" id=9]
+[ext_resource path="res://assets/Player/Armor_15.png" type="Texture" id=10]
+[ext_resource path="res://assets/Player/Armor_20.png" type="Texture" id=11]
+[ext_resource path="res://assets/Player/Armor_16.png" type="Texture" id=12]
+[ext_resource path="res://assets/Player/Armor_21.png" type="Texture" id=13]
+[ext_resource path="res://assets/Player/Armor_26.png" type="Texture" id=14]
+[ext_resource path="res://assets/Player/Armor_39.png" type="Texture" id=15]
+[ext_resource path="res://assets/Player/Armor_31.png" type="Texture" id=16]
+[ext_resource path="res://assets/Player/Armor_32.png" type="Texture" id=17]
+[ext_resource path="res://assets/Player/Armor_34.png" type="Texture" id=18]
+[ext_resource path="res://assets/Player/Armor_41.png" type="Texture" id=19]
+[ext_resource path="res://assets/Player/Armor_47.png" type="Texture" id=20]
+[ext_resource path="res://assets/Player/Armor_50.png" type="Texture" id=21]
+[ext_resource path="res://assets/Player/Armor_61.png" type="Texture" id=22]
+[ext_resource path="res://assets/Player/Armor_75.png" type="Texture" id=23]
+[ext_resource path="res://assets/Player/Armor_77.png" type="Texture" id=24]
+[ext_resource path="res://assets/Player/Armor_80.png" type="Texture" id=25]
+[ext_resource path="res://assets/Player/Armor_78.png" type="Texture" id=26]
+[ext_resource path="res://assets/Player/Armor_02.png" type="Texture" id=27]
+[ext_resource path="res://assets/Player/Armor_04.png" type="Texture" id=28]
+[ext_resource path="res://assets/Player/Armor_07.png" type="Texture" id=29]
+[ext_resource path="res://assets/Player/Armor_05.png" type="Texture" id=30]
+[ext_resource path="res://assets/Player/Armor_06.png" type="Texture" id=31]
+[ext_resource path="res://assets/Player/Armor_17.png" type="Texture" id=32]
+[ext_resource path="res://assets/Player/Armor_18.png" type="Texture" id=33]
+[ext_resource path="res://assets/Player/Armor_25.png" type="Texture" id=34]
+[ext_resource path="res://assets/Player/Armor_19.png" type="Texture" id=35]
+[ext_resource path="res://assets/Player/Armor_23.png" type="Texture" id=36]
+[ext_resource path="res://assets/Player/Armor_33.png" type="Texture" id=37]
+[ext_resource path="res://assets/Player/Armor_24.png" type="Texture" id=38]
+[ext_resource path="res://assets/Player/Armor_45.png" type="Texture" id=39]
+[ext_resource path="res://assets/Player/Armor_35.png" type="Texture" id=40]
+[ext_resource path="res://assets/Player/Armor_52.png" type="Texture" id=41]
+[ext_resource path="res://assets/Player/Armor_53.png" type="Texture" id=42]
+[ext_resource path="res://assets/Player/Armor_54.png" type="Texture" id=43]
+[ext_resource path="res://assets/Player/Armor_55.png" type="Texture" id=44]
+[ext_resource path="res://assets/Player/Armor_60.png" type="Texture" id=45]
+[ext_resource path="res://assets/Player/Armor_65.png" type="Texture" id=46]
+[ext_resource path="res://assets/Player/Armor_71.png" type="Texture" id=47]
+[ext_resource path="res://assets/Player/Armor_68.png" type="Texture" id=48]
+[ext_resource path="res://assets/Player/Armor_79.png" type="Texture" id=49]
+[ext_resource path="res://assets/Player/Armor_81.png" type="Texture" id=50]
+[ext_resource path="res://assets/Player/Armor_85.png" type="Texture" id=51]
+[ext_resource path="res://assets/Player/Armor_86.png" type="Texture" id=52]
+[ext_resource path="res://assets/Player/Armor_01.png" type="Texture" id=53]
+[ext_resource path="res://assets/Player/Armor_08.png" type="Texture" id=54]
+[ext_resource path="res://assets/Player/Armor_10.png" type="Texture" id=55]
+[ext_resource path="res://assets/Player/Armor_11.png" type="Texture" id=56]
+[ext_resource path="res://assets/Player/Armor_13.png" type="Texture" id=57]
+[ext_resource path="res://assets/Player/Armor_14.png" type="Texture" id=58]
+[ext_resource path="res://assets/Player/Armor_22.png" type="Texture" id=59]
+[ext_resource path="res://assets/Player/Armor_27.png" type="Texture" id=60]
+[ext_resource path="res://assets/Player/Armor_28.png" type="Texture" id=61]
+[ext_resource path="res://assets/Player/Armor_30.png" type="Texture" id=62]
+[ext_resource path="res://assets/Player/Armor_42.png" type="Texture" id=63]
+[ext_resource path="res://assets/Player/Armor_37.png" type="Texture" id=64]
+[ext_resource path="res://assets/Player/Armor_36.png" type="Texture" id=65]
+[ext_resource path="res://assets/Player/Armor_38.png" type="Texture" id=66]
+[ext_resource path="res://assets/Player/Armor_44.png" type="Texture" id=67]
+[ext_resource path="res://assets/Player/Armor_46.png" type="Texture" id=68]
+[ext_resource path="res://assets/Player/Armor_48.png" type="Texture" id=69]
+[ext_resource path="res://assets/Player/Armor_58.png" type="Texture" id=70]
+[ext_resource path="res://assets/Player/Armor_49.png" type="Texture" id=71]
+[ext_resource path="res://assets/Player/Armor_56.png" type="Texture" id=72]
+[ext_resource path="res://assets/Player/Armor_51.png" type="Texture" id=73]
+[ext_resource path="res://assets/Player/Armor_57.png" type="Texture" id=74]
+[ext_resource path="res://assets/Player/Armor_59.png" type="Texture" id=75]
+[ext_resource path="res://assets/Player/Armor_66.png" type="Texture" id=76]
+[ext_resource path="res://assets/Player/Armor_62.png" type="Texture" id=77]
+[ext_resource path="res://assets/Player/Armor_63.png" type="Texture" id=78]
+[ext_resource path="res://assets/Player/Armor_64.png" type="Texture" id=79]
+[ext_resource path="res://assets/Player/Armor_70.png" type="Texture" id=80]
+[ext_resource path="res://assets/Player/Armor_67.png" type="Texture" id=81]
+[ext_resource path="res://assets/Player/Armor_83.png" type="Texture" id=82]
+[ext_resource path="res://assets/Player/Armor_72.png" type="Texture" id=83]
+[ext_resource path="res://assets/Player/Armor_73.png" type="Texture" id=84]
+[ext_resource path="res://assets/Player/Armor_74.png" type="Texture" id=85]
+[ext_resource path="res://assets/Player/Armor_76.png" type="Texture" id=86]
+[ext_resource path="res://assets/Player/Armor_84.png" type="Texture" id=87]
+[ext_resource path="res://assets/Player/Armor_88.png" type="Texture" id=88]
+[ext_resource path="res://assets/Player/Armor_91.png" type="Texture" id=89]
+[ext_resource path="res://assets/Player/Armor_95.png" type="Texture" id=90]
+[ext_resource path="res://assets/Player/Armor_96.png" type="Texture" id=91]
+[ext_resource path="res://assets/Player/Armor_89.png" type="Texture" id=92]
+[ext_resource path="res://assets/Player/Armor_92.png" type="Texture" id=93]
+[ext_resource path="res://assets/Player/Armor_90.png" type="Texture" id=94]
+[ext_resource path="res://assets/Player/Armor_93.png" type="Texture" id=95]
+[ext_resource path="res://assets/Player/Armor_94.png" type="Texture" id=96]
+
+[resource]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 49 ), ExtResource( 25 ), ExtResource( 50 ), ExtResource( 6 ), ExtResource( 82 ), ExtResource( 87 ), ExtResource( 51 ), ExtResource( 52 ) ],
+"loop": false,
+"name": "Block",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 59 ) ],
+"loop": false,
+"name": "Land",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 35 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 66 ), ExtResource( 15 ), ExtResource( 3 ), ExtResource( 19 ) ],
+"loop": false,
+"name": "Cross",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 37 ), ExtResource( 18 ), ExtResource( 40 ), ExtResource( 65 ) ],
+"loop": false,
+"name": "Jab",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 88 ), ExtResource( 92 ), ExtResource( 94 ) ],
+"loop": false,
+"name": "Hurt",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 89 ), ExtResource( 93 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 90 ), ExtResource( 91 ) ],
+"loop": false,
+"name": "Die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 63 ), ExtResource( 4 ), ExtResource( 67 ), ExtResource( 39 ), ExtResource( 68 ), ExtResource( 20 ), ExtResource( 69 ), ExtResource( 71 ) ],
+"loop": false,
+"name": "Sword",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 73 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "Spear",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 44 ), ExtResource( 72 ), ExtResource( 74 ), ExtResource( 70 ), ExtResource( 75 ), ExtResource( 45 ), ExtResource( 22 ) ],
+"loop": false,
+"name": "Axe",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 81 ), ExtResource( 48 ), ExtResource( 5 ), ExtResource( 80 ) ],
+"loop": false,
+"name": "Dagger",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 38 ), ExtResource( 34 ), ExtResource( 14 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 1 ), ExtResource( 62 ), ExtResource( 16 ) ],
+"loop": false,
+"name": "Roll",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 9 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 10 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "Run",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 27 ), ExtResource( 8 ), ExtResource( 28 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 29 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 23 ), ExtResource( 86 ), ExtResource( 24 ), ExtResource( 26 ) ],
+"loop": false,
+"name": "Club",
+"speed": 10.0
+} ]

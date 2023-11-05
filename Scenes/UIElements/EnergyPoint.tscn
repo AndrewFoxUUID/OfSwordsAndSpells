@@ -1,0 +1,98 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://assets/User Interface/energy_store.png" type="Texture" id=1]
+
+[sub_resource type="Shader" id=1]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+
+uniform vec4 energy_color: hint_color = vec4(0.0, 0.0, 0.0, 1.0);
+uniform bool do_shine = false;
+uniform vec4 shine_color : hint_color = vec4(1.0, 1.0, 1.0, 0.5);
+uniform float shine_speed : hint_range(0.0, 10.0, 0.1) = 1.5;
+uniform float shine_size : hint_range(0.01, 1.0, 0.01) = 0.01;
+uniform float offset = 0.0;
+
+void fragment() {
+	vec4 current_color = texture(TEXTURE, UV);
+	if (current_color.r < 0.01 && current_color.g < 0.01 && current_color.b < 0.01 && current_color.a > 0.99) {
+		COLOR = energy_color;
+	} else {
+		COLOR = current_color;
+	}
+	if (do_shine) {
+		float shine = step(1.0 - shine_size * 0.5, 0.5 + 0.5 * sin(UV.x - UV.y + TIME * shine_speed + offset));
+		COLOR.rgb = mix(COLOR.rgb, shine_color.rgb, shine*shine_color.a)
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+resource_local_to_scene = true
+shader = SubResource( 1 )
+shader_param/energy_color = Color( 0, 0, 0, 1 )
+shader_param/do_shine = false
+shader_param/shine_color = Color( 1, 1, 1, 0.5 )
+shader_param/shine_speed = 1.5
+shader_param/shine_size = 0.01
+shader_param/offset = 0.0
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 1 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 1 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 1 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 1 )
+region = Rect2( 256, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 1 )
+region = Rect2( 288, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 1 )
+region = Rect2( 320, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 1 )
+region = Rect2( 352, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="EnergyPoint" type="AnimatedSprite"]
+material = SubResource( 2 )
+frames = SubResource( 15 )
+speed_scale = 2.0

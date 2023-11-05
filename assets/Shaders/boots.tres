@@ -1,0 +1,43 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=84]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+
+const vec4 original_light_boot = vec4(0.76, 0.78, 0.35, 1.00);
+const vec4 original_boot = vec4(0.33, 0.27, 0.38, 1.00);
+const vec4 original_dark_boot = vec4(0.41, 0.23, 0.48, 1.00);
+const vec4 original_boot_flair = vec4(0.26, 0.01, 0.38, 1.00);
+
+uniform vec4 light_boot : hint_color = vec4(0.76, 0.78, 0.35, 1.00);
+uniform vec4 boot : hint_color = vec4(0.33, 0.27, 0.38, 1.00);
+uniform vec4 dark_boot : hint_color = vec4(0.41, 0.23, 0.48, 1.00);
+uniform vec4 boot_flair : hint_color = vec4(0.26, 0.01, 0.38, 1.00);
+
+bool color_equals(vec4 c1, vec4 c2) {
+	return abs(c1.r - c2.r) < 0.02 && abs(c1.g - c2.g) < 0.02 && abs(c1.b - c2.b) < 0.02 && abs(c1.a - c2.a) < 0.02;
+}
+
+void fragment() {
+	vec4 current_color = texture(TEXTURE, UV);
+	
+	if (color_equals(current_color, original_light_boot)) {
+		COLOR = light_boot;
+	} else if (color_equals(current_color, original_boot)) {
+		COLOR = boot;
+	} else if (color_equals(current_color, original_dark_boot)) {
+		COLOR = dark_boot;
+	} else if (color_equals(current_color, original_boot_flair)) {
+		COLOR = boot_flair;
+	} else {
+		COLOR = current_color;
+	}
+}"
+
+[resource]
+resource_local_to_scene = true
+shader = SubResource( 84 )
+shader_param/light_boot = Color( 0.76, 0.78, 0.35, 1 )
+shader_param/boot = Color( 0.33, 0.27, 0.38, 1 )
+shader_param/dark_boot = Color( 0.41, 0.23, 0.48, 1 )
+shader_param/boot_flair = Color( 0.26, 0.01, 0.38, 1 )

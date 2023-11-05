@@ -1,0 +1,14 @@
+max_health = 10
+health = 10
+soul_energy = 65
+spellbook = []
+spell_slots = ['Spell', 'Spell', 'Spell', 'Spell', 'Spell', 'Spell', 'Spell', 'Spell', 'PlanarStep', 'Planeswalk']
+inventory = {'martialweapon': '1 ShortSword', 'magicweapon': '0 MagicWeapon', 'helm': '0 Helm', 'charm': '0 Charm', 'breastplate': '1 ChainTunic', 'ring': '0 Ring', 'boots': '1 LeatherBoots', 'gauntlet': '1 LeatherGloves', 'shield': '1 MetalShield', 'cloak': '1 Hood', 'coins': '0 Coins', 'ammo': '0 Ammunition', 'inventory': ['1 Ahlspeiss', '1 Apple', '1 ArmadilloCharm', '1 Arrow', '1 Bananas', '1 Barbuta', '1 Bardiche', '1 Battleaxe', '1 BlueDye', '1 BlueFlask', '1 BlueScroll', '1 BlueVial', '1 BowStock', '1 Bread', '1 BroadSword', '1 Buckler', '1 Burganet', '1 Cabasset', '1 Candle', '1 Chalice', '1 Cheese', '1 Claymore', '1 Cloth', '1 CopperKey', '1 Corseque', '1 Dagger', '1 Egg', '1 Falchion', '1 Feather', '1 FullLeatherGloves', '1 GoldBar', '1 GoldBoots', '1 GoldBreastPlate', '1 GoldDagger', '1 GoldShield', '1 Grapes', '1 GreatHelm', '1 GreatSword', '1 Halberd', '1 Handaxe', '1 Hatchet', '1 Heater', '1 HollowHeadedSpear', '1 Honey', '1 HornedGreatHelm', '1 HornedHelm', '1 Janto', '1 Karambit', '1 Kite', '1 Lance', '1 Leaf', '1 LeatherPauldron', '1 LeatherTunic', '1 LongSword', '1 Machette', '1 Meat', '1 MetalBoots', '1 MetalBreastPlate', '1 MetalGauntlet', '1 MetalHelm', '1 MetalPauldron', '1 MetalTunic', '1 Mud', '1 Mushroom', '1 PhoenixFeather', '1 Pie', '1 Pike', '1 PinkFlask', '1 PinkScroll', '1 PinkVial', '1 Ranseur', '1 Rapier', '1 Rock', '1 Saber', '1 Sai', '1 Salade', '1 Scroll', '1 SilverBar', '1 SilverKey', '1 Spear', '1 SquireHelm', '1 Stiletto', '1 StuddedGloves', '1 StuddedLeatherBoots', '1 StuddedTunic', '1 Tablet', '1 ThrowingAxe', '1 Trident', '1 Twigs', '1 WarDoor', '1 Waraxe', '1 Wheat', '1 Wood', '1 WoodenHalfShield', '1 WoodenShield']}
+keybinds = {'pause': 27, 'm-up': 119, 'm-down': 115, 'm-up_left': 113, 'm-up_right': 101, 'm-down_left': 97, 'm-down_right': 100, 'm-enter': 13, 'm-zoom_in': 61, 'm-zoom_out': 45, 'p-left': 97, 'p-right': 100, 'p-jump': 32, 'p-roll': 115, 'p-interact': 113, 'p-open_inventory': 101, 'p-open_spellbook': 116, 'p-block': 102, 'p-attack': 122, 'p-special': 119, 'p-spell_1': 49, 'p-spell_2': 50, 'p-spell_3': 51, 'p-spell_4': 52, 'p-spell_5': 53, 'p-spell_6': 54, 'p-spell_7': 55, 'p-spell_8': 56, 'p-spell_planar_step': 57, 'p-spell_planeswalk': 48}
+shielded = 0
+achievments = {'Tainted': False, 'Manatee': False, 'For the Rolls': False, "I'm going to make you an offer you can't refuse": False}
+style = 1
+alignment = 0
+playerclass = 'Adventurer'
+tutorial = {'basics': True, 'combat': True, 'inventory': True, 'spellcasting': True, 'death': True}
+race = 'human'

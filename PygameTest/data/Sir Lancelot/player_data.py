@@ -1,0 +1,14 @@
+max_health = 4
+health = 4
+soul_energy = 1
+spellbook = []
+spell_slots = ['Spell', 'Spell', 'Spell', 'Spell', 'Spell', 'Spell', 'Spell', 'Spell', 'Spell', 'Spell']
+inventory = {'martialweapon': '1 ShortSword', 'magicweapon': '0 MagicWeapon', 'helm': '0 Helm', 'charm': '0 Charm', 'breastplate': '1 ChainTunic', 'ring': '0 Ring', 'boots': '1 LeatherBoots', 'gauntlet': '1 LeatherGloves', 'shield': '1 MetalShield', 'cloak': '1 Hood', 'coins': '0 Coins', 'ammo': '0 Ammunition', 'inventory': []}
+keybinds = {'pause': 27, 'm-up': 119, 'm-down': 115, 'm-up_left': 113, 'm-up_right': 101, 'm-down_left': 97, 'm-down_right': 100, 'm-enter': 13, 'm-zoom_in': 61, 'm-zoom_out': 45, 'p-left': 97, 'p-right': 100, 'p-jump': 32, 'p-roll': 115, 'p-interact': 113, 'p-open_inventory': 101, 'p-open_spellbook': 116, 'p-block': 102, 'p-attack': 122, 'p-special': 119, 'p-spell_1': 49, 'p-spell_2': 50, 'p-spell_3': 51, 'p-spell_4': 52, 'p-spell_5': 53, 'p-spell_6': 54, 'p-spell_7': 55, 'p-spell_8': 56, 'p-spell_planar_step': 57, 'p-spell_planeswalk': 48}
+shielded = 0
+achievments = {'Tainted': False, 'Manatee': False, 'For the Rolls': False, "I'm going to make you an offer you can't refuse": False}
+style = 1
+alignment = 0
+playerclass = 'Adventurer'
+tutorial = {'basics': True, 'combat': False, 'inventory': False, 'spellcasting': False, 'death': False}
+race = 'human'

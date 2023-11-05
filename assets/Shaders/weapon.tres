@@ -1,0 +1,53 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=84]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+
+const vec4 original_weapon_follow = vec4(0.55, 0.56, 0.67, 1.00);
+const vec4 original_dark_weapon_follow = vec4(0.13, 0.14, 0.23, 1.00);
+const vec4 original_light_weapon = vec4(0.86, 0.73, 0.24, 1.00);
+const vec4 original_weapon = vec4(0.70, 0.72, 0.83, 1.00);
+const vec4 original_dark_weapon = vec4(0.23, 0.14, 0.21, 1.00);
+const vec4 original_weapon_flair = vec4(0.49, 0.01, 0.12, 1.00);
+
+uniform vec4 weapon_follow = vec4(0.55, 0.56, 0.67, 1.00);
+uniform vec4 dark_weapon_follow = vec4(0.13, 0.14, 0.23, 1.00);
+uniform vec4 light_weapon : hint_color = vec4(0.86, 0.73, 0.24, 1.00);
+uniform vec4 weapon : hint_color = vec4(0.70, 0.72, 0.83, 1.00);
+uniform vec4 dark_weapon : hint_color = vec4(0.23, 0.14, 0.21, 1.00);
+uniform vec4 weapon_flair : hint_color = vec4(0.45, 0.01, 0.12, 1.00);
+
+bool color_equals(vec4 c1, vec4 c2) {
+	return abs(c1.r - c2.r) < 0.02 && abs(c1.g - c2.g) < 0.02 && abs(c1.b - c2.b) < 0.02 && abs(c1.a - c2.a) < 0.02;
+}
+
+void fragment() {
+	vec4 current_color = texture(TEXTURE, UV);
+	
+	if (color_equals(current_color, original_weapon_follow)) {
+		COLOR = weapon_follow;
+	} else if (color_equals(current_color, original_dark_weapon_follow)) {
+		COLOR = dark_weapon_follow;
+	} else if (color_equals(current_color, original_light_weapon)) {
+		COLOR = light_weapon;
+	} else if (color_equals(current_color, original_weapon)) {
+		COLOR = weapon;
+	} else if (color_equals(current_color, original_dark_weapon)) {
+		COLOR = dark_weapon;
+	} else if (color_equals(current_color, original_weapon_flair)) {
+		COLOR = weapon_flair;
+	} else {
+		COLOR = current_color;
+	}
+}"
+
+[resource]
+resource_local_to_scene = true
+shader = SubResource( 84 )
+shader_param/weapon_follow = Plane( 0.55, 0.56, 0.67, 1 )
+shader_param/dark_weapon_follow = Plane( 0.13, 0.14, 0.23, 1 )
+shader_param/light_weapon = Color( 0.86, 0.73, 0.24, 1 )
+shader_param/weapon = Color( 0.7, 0.72, 0.83, 1 )
+shader_param/dark_weapon = Color( 0.23, 0.14, 0.21, 1 )
+shader_param/weapon_flair = Color( 0.45, 0.01, 0.12, 1 )

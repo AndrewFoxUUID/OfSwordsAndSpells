@@ -1,0 +1,258 @@
+[gd_scene load_steps=182 format=2]
+
+[ext_resource path="res://assets/Items/Item__092.png" type="Texture" id=1]
+[ext_resource path="res://assets/Items/Item__013.png" type="Texture" id=2]
+[ext_resource path="res://assets/Items/Item__145.png" type="Texture" id=3]
+[ext_resource path="res://assets/Items/Item__136.png" type="Texture" id=4]
+[ext_resource path="res://assets/Items/Item__081.png" type="Texture" id=5]
+[ext_resource path="res://assets/Items/Item__139.png" type="Texture" id=6]
+[ext_resource path="res://assets/Items/Item__050.png" type="Texture" id=7]
+[ext_resource path="res://assets/Items/Item__006.png" type="Texture" id=8]
+[ext_resource path="res://Scripts/Item.gd" type="Script" id=9]
+[ext_resource path="res://assets/Items/Item__101.png" type="Texture" id=10]
+[ext_resource path="res://assets/Items/Item__100.png" type="Texture" id=11]
+[ext_resource path="res://assets/Items/Item__026.png" type="Texture" id=12]
+[ext_resource path="res://assets/Items/Item__122.png" type="Texture" id=13]
+[ext_resource path="res://assets/Items/Item__017.png" type="Texture" id=14]
+[ext_resource path="res://assets/Items/Item__106.png" type="Texture" id=15]
+[ext_resource path="res://assets/Items/Item__108.png" type="Texture" id=16]
+[ext_resource path="res://assets/Items/Item__094.png" type="Texture" id=17]
+[ext_resource path="res://assets/Items/Item__038.png" type="Texture" id=18]
+[ext_resource path="res://assets/Items/Item__043.png" type="Texture" id=19]
+[ext_resource path="res://assets/Items/Item__044.png" type="Texture" id=20]
+[ext_resource path="res://assets/Items/Item__058.png" type="Texture" id=21]
+[ext_resource path="res://assets/Items/Item__073.png" type="Texture" id=22]
+[ext_resource path="res://assets/Items/Item__075.png" type="Texture" id=23]
+[ext_resource path="res://assets/Items/Item__084.png" type="Texture" id=24]
+[ext_resource path="res://assets/Items/Item__085.png" type="Texture" id=25]
+[ext_resource path="res://assets/Items/Item__021.png" type="Texture" id=26]
+[ext_resource path="res://assets/Items/Item__011.png" type="Texture" id=27]
+[ext_resource path="res://assets/Items/Item__029.png" type="Texture" id=28]
+[ext_resource path="res://assets/Items/Item__035.png" type="Texture" id=29]
+[ext_resource path="res://assets/Items/Item__126.png" type="Texture" id=30]
+[ext_resource path="res://assets/Items/Item__042.png" type="Texture" id=31]
+[ext_resource path="res://assets/Items/Item__112.png" type="Texture" id=32]
+[ext_resource path="res://assets/Items/Item__115.png" type="Texture" id=33]
+[ext_resource path="res://assets/Items/Item__-01.png" type="Texture" id=34]
+[ext_resource path="res://assets/Items/Item__005.png" type="Texture" id=35]
+[ext_resource path="res://assets/Items/Item__132.png" type="Texture" id=36]
+[ext_resource path="res://assets/Items/Item__142.png" type="Texture" id=37]
+[ext_resource path="res://assets/Items/Item__074.png" type="Texture" id=38]
+[ext_resource path="res://assets/Items/Item__147.png" type="Texture" id=39]
+[ext_resource path="res://assets/Items/Item__082.png" type="Texture" id=40]
+[ext_resource path="res://assets/Items/Item__091.png" type="Texture" id=41]
+[ext_resource path="res://assets/Items/Item__133.png" type="Texture" id=42]
+[ext_resource path="res://assets/Items/Item__030.png" type="Texture" id=43]
+[ext_resource path="res://assets/Items/Item__077.png" type="Texture" id=44]
+[ext_resource path="res://assets/Items/Item__066.png" type="Texture" id=45]
+[ext_resource path="res://assets/Items/Item__089.png" type="Texture" id=46]
+[ext_resource path="res://assets/Item Base/3.png" type="Texture" id=47]
+[ext_resource path="res://assets/Item Placeholders/10.png" type="Texture" id=48]
+[ext_resource path="res://assets/Item Base/12.png" type="Texture" id=49]
+[ext_resource path="res://assets/Item Base/4.png" type="Texture" id=50]
+[ext_resource path="res://assets/Item Base/0.png" type="Texture" id=51]
+[ext_resource path="res://assets/Item Placeholders/0.png" type="Texture" id=52]
+[ext_resource path="res://assets/Item Placeholders/7.png" type="Texture" id=53]
+[ext_resource path="res://assets/Item Base/11.png" type="Texture" id=54]
+[ext_resource path="res://assets/Item Base/10.png" type="Texture" id=55]
+[ext_resource path="res://assets/Items/Item__128.png" type="Texture" id=56]
+[ext_resource path="res://assets/Items/Item__141.png" type="Texture" id=57]
+[ext_resource path="res://assets/Items/Item__003.png" type="Texture" id=58]
+[ext_resource path="res://assets/Items/Item__033.png" type="Texture" id=59]
+[ext_resource path="res://assets/Items/Item__052.png" type="Texture" id=60]
+[ext_resource path="res://assets/Items/Item__063.png" type="Texture" id=61]
+[ext_resource path="res://assets/Items/Item__078.png" type="Texture" id=62]
+[ext_resource path="res://assets/Items/Item__007.png" type="Texture" id=63]
+[ext_resource path="res://assets/Items/Item__125.png" type="Texture" id=64]
+[ext_resource path="res://assets/Items/Item__137.png" type="Texture" id=65]
+[ext_resource path="res://assets/Items/Item__008.png" type="Texture" id=66]
+[ext_resource path="res://assets/Items/Item__037.png" type="Texture" id=67]
+[ext_resource path="res://assets/Items/Item__144.png" type="Texture" id=68]
+[ext_resource path="res://assets/Items/Item__146.png" type="Texture" id=69]
+[ext_resource path="res://assets/Items/Item__096.png" type="Texture" id=70]
+[ext_resource path="res://assets/Items/Item__097.png" type="Texture" id=71]
+[ext_resource path="res://assets/Items/Item__104.png" type="Texture" id=72]
+[ext_resource path="res://assets/Items/Item__000.png" type="Texture" id=73]
+[ext_resource path="res://assets/Items/Item__018.png" type="Texture" id=74]
+[ext_resource path="res://assets/Items/Item__039.png" type="Texture" id=75]
+[ext_resource path="res://assets/Items/Item__009.png" type="Texture" id=76]
+[ext_resource path="res://assets/Items/Item__016.png" type="Texture" id=77]
+[ext_resource path="res://assets/Items/Item__045.png" type="Texture" id=78]
+[ext_resource path="res://assets/Items/Item__047.png" type="Texture" id=79]
+[ext_resource path="res://assets/Items/Item__059.png" type="Texture" id=80]
+[ext_resource path="res://assets/Items/Item__069.png" type="Texture" id=81]
+[ext_resource path="res://assets/Items/Item__034.png" type="Texture" id=82]
+[ext_resource path="res://assets/Items/Item__041.png" type="Texture" id=83]
+[ext_resource path="res://assets/Items/Item__124.png" type="Texture" id=84]
+[ext_resource path="res://assets/Items/Item__079.png" type="Texture" id=85]
+[ext_resource path="res://assets/Items/Item__098.png" type="Texture" id=86]
+[ext_resource path="res://assets/Items/Item__103.png" type="Texture" id=87]
+[ext_resource path="res://assets/Items/Item__110.png" type="Texture" id=88]
+[ext_resource path="res://assets/Items/Item__114.png" type="Texture" id=89]
+[ext_resource path="res://assets/Items/Item__138.png" type="Texture" id=90]
+[ext_resource path="res://assets/Items/Item__143.png" type="Texture" id=91]
+[ext_resource path="res://assets/Items/Item__086.png" type="Texture" id=92]
+[ext_resource path="res://assets/Items/Item__129.png" type="Texture" id=93]
+[ext_resource path="res://assets/Items/Item__054.png" type="Texture" id=94]
+[ext_resource path="res://assets/Items/Item__056.png" type="Texture" id=95]
+[ext_resource path="res://assets/Items/Item__068.png" type="Texture" id=96]
+[ext_resource path="res://assets/Items/Item__072.png" type="Texture" id=97]
+[ext_resource path="res://assets/Items/Item__130.png" type="Texture" id=98]
+[ext_resource path="res://assets/Items/Item__119.png" type="Texture" id=99]
+[ext_resource path="res://assets/Items/Item__067.png" type="Texture" id=100]
+[ext_resource path="res://assets/Item Base/9.png" type="Texture" id=101]
+[ext_resource path="res://assets/Item Placeholders/1.png" type="Texture" id=102]
+[ext_resource path="res://assets/Item Base/8.png" type="Texture" id=103]
+[ext_resource path="res://assets/Item Placeholders/2.png" type="Texture" id=104]
+[ext_resource path="res://assets/Items/Item__012.png" type="Texture" id=105]
+[ext_resource path="res://assets/Items/Item__117.png" type="Texture" id=106]
+[ext_resource path="res://assets/Items/Item__127.png" type="Texture" id=107]
+[ext_resource path="res://assets/Items/Item__135.png" type="Texture" id=108]
+[ext_resource path="res://assets/Items/Item__111.png" type="Texture" id=109]
+[ext_resource path="res://assets/Items/Item__046.png" type="Texture" id=110]
+[ext_resource path="res://assets/Items/Item__001.png" type="Texture" id=111]
+[ext_resource path="res://assets/Items/Item__015.png" type="Texture" id=112]
+[ext_resource path="res://assets/Items/Item__024.png" type="Texture" id=113]
+[ext_resource path="res://assets/Items/Item__023.png" type="Texture" id=114]
+[ext_resource path="res://assets/Items/Item__088.png" type="Texture" id=115]
+[ext_resource path="res://assets/Items/Item__019.png" type="Texture" id=116]
+[ext_resource path="res://assets/Items/Item__099.png" type="Texture" id=117]
+[ext_resource path="res://assets/Items/Item__105.png" type="Texture" id=118]
+[ext_resource path="res://assets/Items/Item__113.png" type="Texture" id=119]
+[ext_resource path="res://assets/Items/Item__107.png" type="Texture" id=120]
+[ext_resource path="res://assets/Items/Item__004.png" type="Texture" id=121]
+[ext_resource path="res://assets/Items/Item__118.png" type="Texture" id=122]
+[ext_resource path="res://assets/Items/Item__120.png" type="Texture" id=123]
+[ext_resource path="res://assets/Items/Item__121.png" type="Texture" id=124]
+[ext_resource path="res://assets/Items/Item__123.png" type="Texture" id=125]
+[ext_resource path="res://assets/Items/Item__087.png" type="Texture" id=126]
+[ext_resource path="res://assets/Items/Item__093.png" type="Texture" id=127]
+[ext_resource path="res://assets/Items/Item__002.png" type="Texture" id=128]
+[ext_resource path="res://assets/Items/Item__051.png" type="Texture" id=129]
+[ext_resource path="res://assets/Items/Item__053.png" type="Texture" id=130]
+[ext_resource path="res://assets/Items/Item__064.png" type="Texture" id=131]
+[ext_resource path="res://assets/Items/Item__065.png" type="Texture" id=132]
+[ext_resource path="res://assets/Items/Item__055.png" type="Texture" id=133]
+[ext_resource path="res://assets/Items/Item__062.png" type="Texture" id=134]
+[ext_resource path="res://assets/Items/Item__076.png" type="Texture" id=135]
+[ext_resource path="res://assets/Items/Item__020.png" type="Texture" id=136]
+[ext_resource path="res://assets/Items/Item__014.png" type="Texture" id=137]
+[ext_resource path="res://assets/Items/Item__048.png" type="Texture" id=138]
+[ext_resource path="res://assets/Items/Item__027.png" type="Texture" id=139]
+[ext_resource path="res://assets/Items/Item__031.png" type="Texture" id=140]
+[ext_resource path="res://assets/Items/Item__116.png" type="Texture" id=141]
+[ext_resource path="res://assets/Items/Item__032.png" type="Texture" id=142]
+[ext_resource path="res://assets/Items/Item__080.png" type="Texture" id=143]
+[ext_resource path="res://assets/Items/Item__109.png" type="Texture" id=144]
+[ext_resource path="res://assets/Items/Item__140.png" type="Texture" id=145]
+[ext_resource path="res://assets/Items/Item__090.png" type="Texture" id=146]
+[ext_resource path="res://assets/Items/Item__131.png" type="Texture" id=147]
+[ext_resource path="res://assets/Items/Item__057.png" type="Texture" id=148]
+[ext_resource path="res://assets/Items/Item__071.png" type="Texture" id=149]
+[ext_resource path="res://assets/Items/Item__022.png" type="Texture" id=150]
+[ext_resource path="res://assets/Items/Item__134.png" type="Texture" id=151]
+[ext_resource path="res://assets/Items/Item__036.png" type="Texture" id=152]
+[ext_resource path="res://assets/Items/Item__060.png" type="Texture" id=153]
+[ext_resource path="res://assets/Item Base/1.png" type="Texture" id=154]
+[ext_resource path="res://assets/Item Placeholders/8.png" type="Texture" id=155]
+[ext_resource path="res://assets/Item Base/6.png" type="Texture" id=156]
+[ext_resource path="res://assets/Item Placeholders/9.png" type="Texture" id=157]
+[ext_resource path="res://assets/Item Base/5.png" type="Texture" id=158]
+[ext_resource path="res://assets/Item Placeholders/5.png" type="Texture" id=159]
+[ext_resource path="res://assets/Item Placeholders/6.png" type="Texture" id=160]
+[ext_resource path="res://assets/Item Base/7.png" type="Texture" id=161]
+[ext_resource path="res://assets/Item Placeholders/3.png" type="Texture" id=162]
+[ext_resource path="res://assets/Items/Item__049.png" type="Texture" id=163]
+[ext_resource path="res://assets/Items/Item__095.png" type="Texture" id=164]
+[ext_resource path="res://assets/Items/Item__010.png" type="Texture" id=165]
+[ext_resource path="res://assets/Items/Item__070.png" type="Texture" id=166]
+[ext_resource path="res://assets/Items/Item__025.png" type="Texture" id=167]
+[ext_resource path="res://assets/Items/Item__028.png" type="Texture" id=168]
+[ext_resource path="res://assets/Items/Item__083.png" type="Texture" id=169]
+[ext_resource path="res://assets/Items/Item__040.png" type="Texture" id=170]
+[ext_resource path="res://assets/Item Placeholders/4.png" type="Texture" id=171]
+[ext_resource path="res://assets/Items/Item__061.png" type="Texture" id=172]
+[ext_resource path="res://assets/Items/Item__102.png" type="Texture" id=173]
+[ext_resource path="res://assets/Item Placeholders/11.png" type="Texture" id=174]
+[ext_resource path="res://assets/Item Base/2.png" type="Texture" id=175]
+[ext_resource path="res://Scenes/UIv2/Label.tscn" type="PackedScene" id=176]
+[ext_resource path="res://Scenes/UIv2/Panel.tscn" type="PackedScene" id=177]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 51 ), ExtResource( 154 ), ExtResource( 175 ), ExtResource( 47 ), ExtResource( 50 ), ExtResource( 158 ), ExtResource( 156 ), ExtResource( 161 ), ExtResource( 103 ), ExtResource( 101 ), ExtResource( 55 ), ExtResource( 54 ), ExtResource( 49 ) ],
+"loop": false,
+"name": "default",
+"speed": 50.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 52 ), ExtResource( 102 ), ExtResource( 104 ), ExtResource( 162 ), ExtResource( 171 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 53 ), ExtResource( 155 ), ExtResource( 157 ), ExtResource( 48 ), ExtResource( 174 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 73 ), ExtResource( 111 ), ExtResource( 128 ), ExtResource( 58 ), ExtResource( 121 ), ExtResource( 35 ), ExtResource( 8 ), ExtResource( 63 ), ExtResource( 66 ), ExtResource( 76 ), ExtResource( 165 ), ExtResource( 27 ), ExtResource( 105 ), ExtResource( 2 ), ExtResource( 137 ), ExtResource( 112 ), ExtResource( 77 ), ExtResource( 14 ), ExtResource( 74 ), ExtResource( 116 ), ExtResource( 136 ), ExtResource( 26 ), ExtResource( 150 ), ExtResource( 114 ), ExtResource( 113 ), ExtResource( 167 ), ExtResource( 12 ), ExtResource( 139 ), ExtResource( 168 ), ExtResource( 28 ), ExtResource( 43 ), ExtResource( 140 ), ExtResource( 142 ), ExtResource( 59 ), ExtResource( 82 ), ExtResource( 29 ), ExtResource( 152 ), ExtResource( 67 ), ExtResource( 18 ), ExtResource( 75 ), ExtResource( 170 ), ExtResource( 83 ), ExtResource( 31 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 78 ), ExtResource( 110 ), ExtResource( 79 ), ExtResource( 138 ), ExtResource( 163 ), ExtResource( 7 ), ExtResource( 129 ), ExtResource( 60 ), ExtResource( 130 ), ExtResource( 94 ), ExtResource( 133 ), ExtResource( 95 ), ExtResource( 148 ), ExtResource( 21 ), ExtResource( 80 ), ExtResource( 153 ), ExtResource( 172 ), ExtResource( 134 ), ExtResource( 61 ), ExtResource( 131 ), ExtResource( 132 ), ExtResource( 45 ), ExtResource( 100 ), ExtResource( 96 ), ExtResource( 81 ), ExtResource( 166 ), ExtResource( 149 ), ExtResource( 97 ), ExtResource( 22 ), ExtResource( 38 ), ExtResource( 23 ), ExtResource( 135 ), ExtResource( 44 ), ExtResource( 62 ), ExtResource( 85 ), ExtResource( 143 ), ExtResource( 5 ), ExtResource( 40 ), ExtResource( 169 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 92 ), ExtResource( 126 ), ExtResource( 115 ), ExtResource( 46 ), ExtResource( 146 ), ExtResource( 41 ), ExtResource( 1 ), ExtResource( 127 ), ExtResource( 17 ), ExtResource( 164 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 86 ), ExtResource( 117 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 173 ), ExtResource( 87 ), ExtResource( 72 ), ExtResource( 118 ), ExtResource( 15 ), ExtResource( 120 ), ExtResource( 16 ), ExtResource( 144 ), ExtResource( 88 ), ExtResource( 109 ), ExtResource( 32 ), ExtResource( 119 ), ExtResource( 89 ), ExtResource( 33 ), ExtResource( 141 ), ExtResource( 106 ), ExtResource( 122 ), ExtResource( 99 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 13 ), ExtResource( 125 ), ExtResource( 84 ), ExtResource( 64 ), ExtResource( 30 ), ExtResource( 107 ), ExtResource( 56 ), ExtResource( 93 ), ExtResource( 98 ), ExtResource( 147 ), ExtResource( 36 ), ExtResource( 42 ), ExtResource( 151 ), ExtResource( 108 ), ExtResource( 4 ), ExtResource( 65 ), ExtResource( 90 ), ExtResource( 6 ), ExtResource( 145 ), ExtResource( 57 ), ExtResource( 37 ), ExtResource( 91 ), ExtResource( 68 ), ExtResource( 3 ), ExtResource( 69 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Item" type="Area2D"]
+script = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 2 )
+
+[node name="Base" type="AnimatedSprite" parent="."]
+frames = SubResource( 3 )
+
+[node name="Placeholder" type="AnimatedSprite" parent="."]
+frames = SubResource( 4 )
+
+[node name="Item" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+
+[node name="Quantity" parent="." instance=ExtResource( 176 )]
+margin_left = -9.0
+margin_top = 5.0
+margin_right = 25.0
+margin_bottom = 13.0
+rect_scale = Vector2( 0.5, 0.5 )
+text = "0"
+align = 2
+flat = true
+
+[node name="Node2D" type="Node2D" parent="."]
+visible = false
+z_index = 1
+
+[node name="PopupPanel" parent="Node2D" instance=ExtResource( 177 )]
+mouse_filter = 2
+
+[node name="Name" parent="Node2D/PopupPanel" instance=ExtResource( 176 )]
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 26.0
+margin_bottom = 9.0
+flat = true
+
+[node name="Attributes" parent="Node2D/PopupPanel" instance=ExtResource( 176 )]
+margin_left = 2.0
+margin_top = 9.0
+margin_right = 24.0
+margin_bottom = 17.0
+rect_scale = Vector2( 0.5, 0.5 )
+flat = true
+dark = true
+
+[connection signal="input_event" from="." to="." method="_on_Item_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_Item_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_Item_mouse_exited"]

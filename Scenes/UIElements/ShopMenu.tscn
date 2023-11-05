@@ -1,0 +1,224 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://assets/User Interface/plus_button.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/UIElements/MenuBook.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/User Interface/plus_button_pressed.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/UIv2/Label.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/UIv2/Button.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/UIElements/Item.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/UI v2/LeftArrow.png" type="Texture" id=7]
+[ext_resource path="res://assets/User Interface/minus_button_pressed.png" type="Texture" id=8]
+[ext_resource path="res://assets/User Interface/minus_button.png" type="Texture" id=9]
+[ext_resource path="res://assets/UI v2/RightArrow.png" type="Texture" id=12]
+[ext_resource path="res://Scripts/ShopMenu.gd" type="Script" id=14]
+
+[sub_resource type="StyleBoxTexture" id=9]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=10]
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=12]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 14, 14 )
+
+[node name="ShopMenu" type="Node2D"]
+script = ExtResource( 14 )
+
+[node name="MenuBook" parent="." instance=ExtResource( 2 )]
+
+[node name="LeftPage" type="Node2D" parent="MenuBook"]
+visible = false
+
+[node name="Label" parent="MenuBook/LeftPage" instance=ExtResource( 4 )]
+margin_left = -51.0
+margin_top = -51.0
+margin_right = -37.0
+margin_bottom = -43.0
+rect_scale = Vector2( 2, 2 )
+text = "Buy"
+
+[node name="LeftArrow" parent="MenuBook/LeftPage" instance=ExtResource( 5 )]
+margin_left = -64.0
+margin_top = -20.0
+margin_right = -53.0
+margin_bottom = -9.0
+rect_scale = Vector2( 0.7, 0.6 )
+icon = ExtResource( 7 )
+
+[node name="Item1" parent="MenuBook/LeftPage" instance=ExtResource( 6 )]
+position = Vector2( -46.6667, -25 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Item2" parent="MenuBook/LeftPage" instance=ExtResource( 6 )]
+position = Vector2( -26.6667, -25.3333 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Item3" parent="MenuBook/LeftPage" instance=ExtResource( 6 )]
+position = Vector2( -46.6667, -7 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Item4" parent="MenuBook/LeftPage" instance=ExtResource( 6 )]
+position = Vector2( -26.6667, -7.33334 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="RightArrow" parent="MenuBook/LeftPage" instance=ExtResource( 5 )]
+margin_left = -17.0
+margin_top = -20.0
+margin_right = -6.0
+margin_bottom = -9.0
+rect_scale = Vector2( 0.7, 0.6 )
+icon = ExtResource( 12 )
+
+[node name="MinusButton" type="Button" parent="MenuBook/LeftPage"]
+margin_left = -60.6668
+margin_top = 9.99994
+margin_right = 9.33319
+margin_bottom = 79.9999
+rect_scale = Vector2( 0.15, 0.15 )
+custom_styles/hover = SubResource( 9 )
+custom_styles/pressed = SubResource( 10 )
+custom_styles/focus = SubResource( 11 )
+custom_styles/normal = SubResource( 12 )
+
+[node name="BuySlot" parent="MenuBook/LeftPage" instance=ExtResource( 6 )]
+position = Vector2( -37, 15.6667 )
+
+[node name="PlusButton" type="Button" parent="MenuBook/LeftPage"]
+margin_left = -23.6667
+margin_top = 9.66666
+margin_right = 46.3333
+margin_bottom = 79.6667
+rect_scale = Vector2( 0.15, 0.15 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+
+[node name="Button" parent="MenuBook/LeftPage" instance=ExtResource( 5 )]
+margin_left = -64.0
+margin_top = 32.0
+margin_right = 3.0
+margin_bottom = 41.0
+rect_scale = Vector2( 0.8, 0.8 )
+text = "Buy for 0 Coins"
+
+[node name="RightPage" type="Node2D" parent="MenuBook"]
+visible = false
+
+[node name="Label" parent="MenuBook/RightPage" instance=ExtResource( 4 )]
+margin_left = 23.0
+margin_top = -51.0
+margin_right = 38.0
+margin_bottom = -43.0
+rect_scale = Vector2( 2, 2 )
+text = "Sell"
+
+[node name="LeftArrow" parent="MenuBook/RightPage" instance=ExtResource( 5 )]
+margin_left = 9.0
+margin_top = -20.0
+margin_right = 20.0
+margin_bottom = -9.0
+rect_scale = Vector2( 0.7, 0.6 )
+icon = ExtResource( 7 )
+
+[node name="Item1" parent="MenuBook/RightPage" instance=ExtResource( 6 )]
+position = Vector2( 26, -25 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Item2" parent="MenuBook/RightPage" instance=ExtResource( 6 )]
+position = Vector2( 46, -25 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Item3" parent="MenuBook/RightPage" instance=ExtResource( 6 )]
+position = Vector2( 26, -7 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="Item4" parent="MenuBook/RightPage" instance=ExtResource( 6 )]
+position = Vector2( 46, -7 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="RightArrow" parent="MenuBook/RightPage" instance=ExtResource( 5 )]
+margin_left = 56.0
+margin_top = -20.0
+margin_right = 67.0
+margin_bottom = -9.0
+rect_scale = Vector2( 0.7, 0.6 )
+icon = ExtResource( 12 )
+
+[node name="MinusButton" type="Button" parent="MenuBook/RightPage"]
+margin_left = 13.3337
+margin_top = 10.0
+margin_right = 83.3337
+margin_bottom = 80.0
+rect_scale = Vector2( 0.15, 0.15 )
+custom_styles/hover = SubResource( 9 )
+custom_styles/pressed = SubResource( 10 )
+custom_styles/focus = SubResource( 11 )
+custom_styles/normal = SubResource( 12 )
+
+[node name="SellSlot" parent="MenuBook/RightPage" instance=ExtResource( 6 )]
+position = Vector2( 37, 15.667 )
+
+[node name="PlusButton" type="Button" parent="MenuBook/RightPage"]
+margin_left = 49.6671
+margin_top = 9.66699
+margin_right = 119.667
+margin_bottom = 79.667
+rect_scale = Vector2( 0.15, 0.15 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+
+[node name="Button" parent="MenuBook/RightPage" instance=ExtResource( 5 )]
+margin_left = 10.0
+margin_top = 32.0
+margin_right = 77.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.8, 0.8 )
+text = "Sell for 0 Coins"
+
+[connection signal="tree_exited" from="." to="." method="_on_ShopMenu_tree_exited"]
+[connection signal="pressed" from="MenuBook/LeftPage/LeftArrow" to="." method="_on_LeftPage_LeftArrow_pressed"]
+[connection signal="pressed" from="MenuBook/LeftPage/Item1" to="." method="_on_LeftPage_Item_pressed" binds= [ 0 ]]
+[connection signal="pressed" from="MenuBook/LeftPage/Item2" to="." method="_on_LeftPage_Item_pressed" binds= [ 1 ]]
+[connection signal="pressed" from="MenuBook/LeftPage/Item3" to="." method="_on_LeftPage_Item_pressed" binds= [ 2 ]]
+[connection signal="pressed" from="MenuBook/LeftPage/Item4" to="." method="_on_LeftPage_Item_pressed" binds= [ 3 ]]
+[connection signal="pressed" from="MenuBook/LeftPage/RightArrow" to="." method="_on_LeftPage_RightArrow_pressed"]
+[connection signal="pressed" from="MenuBook/LeftPage/MinusButton" to="." method="_on_LeftPage_MinusButton_pressed"]
+[connection signal="pressed" from="MenuBook/LeftPage/BuySlot" to="." method="_on_BuySlot_pressed"]
+[connection signal="pressed" from="MenuBook/LeftPage/PlusButton" to="." method="_on_LeftPage_PlusButton_pressed"]
+[connection signal="pressed" from="MenuBook/LeftPage/Button" to="." method="_on_LeftPage_Button_pressed"]
+[connection signal="pressed" from="MenuBook/RightPage/LeftArrow" to="." method="_on_RightPage_LeftArrow_pressed"]
+[connection signal="pressed" from="MenuBook/RightPage/Item1" to="." method="_on_RightPage_Item_pressed" binds= [ 0 ]]
+[connection signal="pressed" from="MenuBook/RightPage/Item2" to="." method="_on_RightPage_Item_pressed" binds= [ 1 ]]
+[connection signal="pressed" from="MenuBook/RightPage/Item3" to="." method="_on_RightPage_Item_pressed" binds= [ 2 ]]
+[connection signal="pressed" from="MenuBook/RightPage/Item4" to="." method="_on_RightPage_Item_pressed" binds= [ 3 ]]
+[connection signal="pressed" from="MenuBook/RightPage/RightArrow" to="." method="_on_RightPage_RightArrow_pressed"]
+[connection signal="pressed" from="MenuBook/RightPage/MinusButton" to="." method="_on_RightPage_MinusButton_pressed"]
+[connection signal="pressed" from="MenuBook/RightPage/SellSlot" to="." method="_on_SellSlot_pressed"]
+[connection signal="pressed" from="MenuBook/RightPage/PlusButton" to="." method="_on_RightPage_PlusButton_pressed"]
+[connection signal="pressed" from="MenuBook/RightPage/Button" to="." method="_on_RightPage_Button_pressed"]

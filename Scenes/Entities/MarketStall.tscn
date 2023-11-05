@@ -1,0 +1,41 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/Structures/market_stall2.png" type="Texture" id=1]
+[ext_resource path="res://assets/Structures/market_stall0.png" type="Texture" id=2]
+[ext_resource path="res://assets/Structures/market_stall3.png" type="Texture" id=3]
+[ext_resource path="res://assets/Structures/market_stall5.png" type="Texture" id=4]
+[ext_resource path="res://assets/Structures/market_stall1.png" type="Texture" id=5]
+[ext_resource path="res://assets/Structures/market_stall4.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/MarketStall.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/Entities/Boxes.tscn" type="PackedScene" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 25.125, 3.5 )
+
+[node name="MarketStall" type="StaticBody2D"]
+scale = Vector2( 3, 3 )
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 7 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+centered = false
+
+[node name="Roof" type="CollisionShape2D" parent="."]
+position = Vector2( 24.875, 10.5 )
+shape = SubResource( 2 )
+one_way_collision = true
+one_way_collision_margin = 4.0
+
+[node name="Boxes" parent="." instance=ExtResource( 8 )]
+position = Vector2( 40, 7.333 )
+scale = Vector2( 1.333, 1.333 )

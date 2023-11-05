@@ -1,0 +1,43 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=84]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+
+const vec4 original_light_helm = vec4(0.77, 0.42, 0.45, 1.00);
+const vec4 original_helm = vec4(0.29, 0.52, 0.60, 1.00);
+const vec4 original_dark_helm = vec4(0.14, 0.26, 0.29, 1.00);
+const vec4 original_helm_flair = vec4(0.56, 0.76, 0.75, 1.00);
+
+uniform vec4 light_helm : hint_color = vec4(0.77, 0.42, 0.45, 1.00);
+uniform vec4 helm : hint_color = vec4(0.29, 0.52, 0.60, 1.00);
+uniform vec4 dark_helm : hint_color = vec4(0.14, 0.26, 0.29, 1.00);
+uniform vec4 helm_flair : hint_color = vec4(0.56, 0.76, 0.75, 1.00);
+
+bool color_equals(vec4 c1, vec4 c2) {
+	return abs(c1.r - c2.r) < 0.02 && abs(c1.g - c2.g) < 0.02 && abs(c1.b - c2.b) < 0.02 && abs(c1.a - c2.a) < 0.02;
+}
+
+void fragment() {
+	vec4 current_color = texture(TEXTURE, UV);
+	
+	if (color_equals(current_color, original_light_helm)) {
+		COLOR = light_helm;
+	} else if (color_equals(current_color, original_helm)) {
+		COLOR = helm;
+	} else if (color_equals(current_color, original_dark_helm)) {
+		COLOR = dark_helm;
+	} else if (color_equals(current_color, original_helm_flair)) {
+		COLOR = helm_flair;
+	} else {
+		COLOR = current_color;
+	}
+}"
+
+[resource]
+resource_local_to_scene = true
+shader = SubResource( 84 )
+shader_param/light_helm = Color( 0.77, 0.42, 0.45, 1 )
+shader_param/helm = Color( 0.29, 0.52, 0.6, 1 )
+shader_param/dark_helm = Color( 0.14, 0.26, 0.29, 1 )
+shader_param/helm_flair = Color( 0.56, 0.76, 0.75, 1 )

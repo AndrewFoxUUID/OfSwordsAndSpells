@@ -1,0 +1,186 @@
+[gd_resource type="SpriteFrames" load_steps=97 format=2]
+
+[ext_resource path="res://assets/Player/Hair1_01.png" type="Texture" id=1]
+[ext_resource path="res://assets/Player/Hair1_20.png" type="Texture" id=2]
+[ext_resource path="res://assets/Player/Hair1_24.png" type="Texture" id=3]
+[ext_resource path="res://assets/Player/Hair1_27.png" type="Texture" id=4]
+[ext_resource path="res://assets/Player/Hair1_34.png" type="Texture" id=5]
+[ext_resource path="res://assets/Player/Hair1_41.png" type="Texture" id=6]
+[ext_resource path="res://assets/Player/Hair1_53.png" type="Texture" id=7]
+[ext_resource path="res://assets/Player/Hair1_55.png" type="Texture" id=8]
+[ext_resource path="res://assets/Player/Hair1_59.png" type="Texture" id=9]
+[ext_resource path="res://assets/Player/Hair1_72.png" type="Texture" id=10]
+[ext_resource path="res://assets/Player/Hair1_76.png" type="Texture" id=11]
+[ext_resource path="res://assets/Player/Hair1_03.png" type="Texture" id=12]
+[ext_resource path="res://assets/Player/Hair1_04.png" type="Texture" id=13]
+[ext_resource path="res://assets/Player/Hair1_06.png" type="Texture" id=14]
+[ext_resource path="res://assets/Player/Hair1_09.png" type="Texture" id=15]
+[ext_resource path="res://assets/Player/Hair1_14.png" type="Texture" id=16]
+[ext_resource path="res://assets/Player/Hair1_17.png" type="Texture" id=17]
+[ext_resource path="res://assets/Player/Hair1_19.png" type="Texture" id=18]
+[ext_resource path="res://assets/Player/Hair1_23.png" type="Texture" id=19]
+[ext_resource path="res://assets/Player/Hair1_29.png" type="Texture" id=20]
+[ext_resource path="res://assets/Player/Hair1_38.png" type="Texture" id=21]
+[ext_resource path="res://assets/Player/Hair1_39.png" type="Texture" id=22]
+[ext_resource path="res://assets/Player/Hair1_42.png" type="Texture" id=23]
+[ext_resource path="res://assets/Player/Hair1_50.png" type="Texture" id=24]
+[ext_resource path="res://assets/Player/Hair1_51.png" type="Texture" id=25]
+[ext_resource path="res://assets/Player/Hair1_47.png" type="Texture" id=26]
+[ext_resource path="res://assets/Player/Hair1_62.png" type="Texture" id=27]
+[ext_resource path="res://assets/Player/Hair1_61.png" type="Texture" id=28]
+[ext_resource path="res://assets/Player/Hair1_63.png" type="Texture" id=29]
+[ext_resource path="res://assets/Player/Hair1_64.png" type="Texture" id=30]
+[ext_resource path="res://assets/Player/Hair1_67.png" type="Texture" id=31]
+[ext_resource path="res://assets/Player/Hair1_87.png" type="Texture" id=32]
+[ext_resource path="res://assets/Player/Hair1_08.png" type="Texture" id=33]
+[ext_resource path="res://assets/Player/Hair1_12.png" type="Texture" id=34]
+[ext_resource path="res://assets/Player/Hair1_16.png" type="Texture" id=35]
+[ext_resource path="res://assets/Player/Hair1_21.png" type="Texture" id=36]
+[ext_resource path="res://assets/Player/Hair1_22.png" type="Texture" id=37]
+[ext_resource path="res://assets/Player/Hair1_35.png" type="Texture" id=38]
+[ext_resource path="res://assets/Player/Hair1_25.png" type="Texture" id=39]
+[ext_resource path="res://assets/Player/Hair1_26.png" type="Texture" id=40]
+[ext_resource path="res://assets/Player/Hair1_30.png" type="Texture" id=41]
+[ext_resource path="res://assets/Player/Hair1_31.png" type="Texture" id=42]
+[ext_resource path="res://assets/Player/Hair1_33.png" type="Texture" id=43]
+[ext_resource path="res://assets/Player/Hair1_40.png" type="Texture" id=44]
+[ext_resource path="res://assets/Player/Hair1_45.png" type="Texture" id=45]
+[ext_resource path="res://assets/Player/Hair1_46.png" type="Texture" id=46]
+[ext_resource path="res://assets/Player/Hair1_49.png" type="Texture" id=47]
+[ext_resource path="res://assets/Player/Hair1_07.png" type="Texture" id=48]
+[ext_resource path="res://assets/Player/Hair1_02.png" type="Texture" id=49]
+[ext_resource path="res://assets/Player/Hair1_10.png" type="Texture" id=50]
+[ext_resource path="res://assets/Player/Hair1_11.png" type="Texture" id=51]
+[ext_resource path="res://assets/Player/Hair1_13.png" type="Texture" id=52]
+[ext_resource path="res://assets/Player/Hair1_15.png" type="Texture" id=53]
+[ext_resource path="res://assets/Player/Hair1_18.png" type="Texture" id=54]
+[ext_resource path="res://assets/Player/Hair1_28.png" type="Texture" id=55]
+[ext_resource path="res://assets/Player/Hair1_32.png" type="Texture" id=56]
+[ext_resource path="res://assets/Player/Hair1_36.png" type="Texture" id=57]
+[ext_resource path="res://assets/Player/Hair1_37.png" type="Texture" id=58]
+[ext_resource path="res://assets/Player/Hair1_43.png" type="Texture" id=59]
+[ext_resource path="res://assets/Player/Hair1_48.png" type="Texture" id=60]
+[ext_resource path="res://assets/Player/Hair1_44.png" type="Texture" id=61]
+[ext_resource path="res://assets/Player/Hair1_54.png" type="Texture" id=62]
+[ext_resource path="res://assets/Player/Hair1_65.png" type="Texture" id=63]
+[ext_resource path="res://assets/Player/Hair1_69.png" type="Texture" id=64]
+[ext_resource path="res://assets/Player/Hair1_73.png" type="Texture" id=65]
+[ext_resource path="res://assets/Player/Hair1_78.png" type="Texture" id=66]
+[ext_resource path="res://assets/Player/Hair1_81.png" type="Texture" id=67]
+[ext_resource path="res://assets/Player/Hair1_83.png" type="Texture" id=68]
+[ext_resource path="res://assets/Player/Hair1_82.png" type="Texture" id=69]
+[ext_resource path="res://assets/Player/Hair1_85.png" type="Texture" id=70]
+[ext_resource path="res://assets/Player/Hair1_88.png" type="Texture" id=71]
+[ext_resource path="res://assets/Player/Hair1_05.png" type="Texture" id=72]
+[ext_resource path="res://assets/Player/Hair1_66.png" type="Texture" id=73]
+[ext_resource path="res://assets/Player/Hair1_86.png" type="Texture" id=74]
+[ext_resource path="res://assets/Player/Hair1_52.png" type="Texture" id=75]
+[ext_resource path="res://assets/Player/Hair1_57.png" type="Texture" id=76]
+[ext_resource path="res://assets/Player/Hair1_56.png" type="Texture" id=77]
+[ext_resource path="res://assets/Player/Hair1_60.png" type="Texture" id=78]
+[ext_resource path="res://assets/Player/Hair1_58.png" type="Texture" id=79]
+[ext_resource path="res://assets/Player/Hair1_70.png" type="Texture" id=80]
+[ext_resource path="res://assets/Player/Hair1_68.png" type="Texture" id=81]
+[ext_resource path="res://assets/Player/Hair1_71.png" type="Texture" id=82]
+[ext_resource path="res://assets/Player/Hair1_74.png" type="Texture" id=83]
+[ext_resource path="res://assets/Player/Hair1_77.png" type="Texture" id=84]
+[ext_resource path="res://assets/Player/Hair1_75.png" type="Texture" id=85]
+[ext_resource path="res://assets/Player/Hair1_79.png" type="Texture" id=86]
+[ext_resource path="res://assets/Player/Hair1_80.png" type="Texture" id=87]
+[ext_resource path="res://assets/Player/Hair1_84.png" type="Texture" id=88]
+[ext_resource path="res://assets/Player/Hair1_89.png" type="Texture" id=89]
+[ext_resource path="res://assets/Player/Hair1_95.png" type="Texture" id=90]
+[ext_resource path="res://assets/Player/Hair1_96.png" type="Texture" id=91]
+[ext_resource path="res://assets/Player/Hair1_90.png" type="Texture" id=92]
+[ext_resource path="res://assets/Player/Hair1_93.png" type="Texture" id=93]
+[ext_resource path="res://assets/Player/Hair1_94.png" type="Texture" id=94]
+[ext_resource path="res://assets/Player/Hair1_91.png" type="Texture" id=95]
+[ext_resource path="res://assets/Player/Hair1_92.png" type="Texture" id=96]
+
+[resource]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 86 ), ExtResource( 87 ), ExtResource( 67 ), ExtResource( 69 ), ExtResource( 68 ), ExtResource( 88 ), ExtResource( 70 ), ExtResource( 74 ) ],
+"loop": false,
+"name": "Block",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 37 ) ],
+"loop": false,
+"name": "Land",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 54 ), ExtResource( 18 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 58 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 44 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "Cross",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 56 ), ExtResource( 43 ), ExtResource( 5 ), ExtResource( 38 ), ExtResource( 57 ) ],
+"loop": false,
+"name": "Jab",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 71 ), ExtResource( 89 ), ExtResource( 92 ) ],
+"loop": false,
+"name": "Hurt",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 95 ), ExtResource( 96 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 90 ), ExtResource( 91 ) ],
+"loop": false,
+"name": "Die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 59 ), ExtResource( 61 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 26 ), ExtResource( 60 ), ExtResource( 47 ) ],
+"loop": false,
+"name": "Sword",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 25 ), ExtResource( 75 ), ExtResource( 7 ), ExtResource( 62 ) ],
+"loop": false,
+"name": "Spear",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 77 ), ExtResource( 76 ), ExtResource( 79 ), ExtResource( 9 ), ExtResource( 78 ), ExtResource( 28 ) ],
+"loop": false,
+"name": "Axe",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 63 ), ExtResource( 73 ), ExtResource( 31 ), ExtResource( 81 ), ExtResource( 64 ), ExtResource( 80 ) ],
+"loop": false,
+"name": "Dagger",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 3 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 4 ), ExtResource( 55 ), ExtResource( 20 ), ExtResource( 41 ), ExtResource( 42 ) ],
+"loop": false,
+"name": "Roll",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 34 ), ExtResource( 52 ), ExtResource( 16 ), ExtResource( 53 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "Run",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 49 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 72 ), ExtResource( 14 ), ExtResource( 48 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 82 ), ExtResource( 10 ), ExtResource( 65 ), ExtResource( 83 ), ExtResource( 85 ), ExtResource( 11 ), ExtResource( 84 ), ExtResource( 66 ) ],
+"loop": false,
+"name": "Club",
+"speed": 10.0
+} ]

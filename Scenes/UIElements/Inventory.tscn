@@ -1,0 +1,146 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Inventory.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/UIElements/Item.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/UIElements/Backpack.tscn" type="PackedScene" id=4]
+
+[node name="Inventory" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 166.0
+margin_bottom = 478.0
+mouse_filter = 2
+color = Color( 0.301961, 0.290196, 0.305882, 1 )
+
+[node name="MartialWeapon" parent="." instance=ExtResource( 2 )]
+position = Vector2( 43, 41 )
+scale = Vector2( 3, 3 )
+
+[node name="MagicWeapon" parent="." instance=ExtResource( 2 )]
+position = Vector2( 124, 41 )
+scale = Vector2( 3, 3 )
+
+[node name="Helm" parent="." instance=ExtResource( 2 )]
+position = Vector2( 43, 112 )
+scale = Vector2( 3, 3 )
+
+[node name="Charm" parent="." instance=ExtResource( 2 )]
+position = Vector2( 124, 112 )
+scale = Vector2( 3, 3 )
+
+[node name="Armor" parent="." instance=ExtResource( 2 )]
+position = Vector2( 43, 183 )
+scale = Vector2( 3, 3 )
+
+[node name="Ring" parent="." instance=ExtResource( 2 )]
+position = Vector2( 124, 183 )
+scale = Vector2( 3, 3 )
+
+[node name="Boots" parent="." instance=ExtResource( 2 )]
+position = Vector2( 43, 254 )
+scale = Vector2( 3, 3 )
+
+[node name="Gauntlets" parent="." instance=ExtResource( 2 )]
+position = Vector2( 124, 254 )
+scale = Vector2( 3, 3 )
+
+[node name="Shield" parent="." instance=ExtResource( 2 )]
+position = Vector2( 43, 325 )
+scale = Vector2( 3, 3 )
+
+[node name="Item" parent="." instance=ExtResource( 2 )]
+position = Vector2( 124, 325 )
+scale = Vector2( 3, 3 )
+
+[node name="Ammunition" parent="." instance=ExtResource( 2 )]
+position = Vector2( 43, 396 )
+scale = Vector2( 3, 3 )
+
+[node name="Coins" parent="." instance=ExtResource( 2 )]
+position = Vector2( 124, 396 )
+scale = Vector2( 3, 3 )
+
+[node name="Inventory" type="Label" parent="."]
+margin_left = 2.0
+margin_top = 437.0
+margin_right = 43.0
+margin_bottom = 445.0
+rect_scale = Vector2( 4, 4 )
+custom_colors/font_color = Color( 0.278431, 0.188235, 0.231373, 1 )
+text = "0"
+align = 1
+
+[node name="InventoryMenu" type="Node2D" parent="."]
+
+[node name="Backpack" parent="InventoryMenu" instance=ExtResource( 4 )]
+position = Vector2( 500, 308 )
+scale = Vector2( 10, 10 )
+z_index = -1
+
+[node name="Contents" type="Node2D" parent="InventoryMenu/Backpack"]
+visible = false
+position = Vector2( -50, -30.8 )
+scale = Vector2( 0.1, 0.1 )
+z_index = 1
+
+[node name="I0" parent="InventoryMenu/Backpack/Contents" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 410, 222 )
+scale = Vector2( 3, 3 )
+
+[node name="I1" parent="InventoryMenu/Backpack/Contents" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 500, 222 )
+scale = Vector2( 3, 3 )
+
+[node name="I2" parent="InventoryMenu/Backpack/Contents" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 590, 222 )
+scale = Vector2( 3, 3 )
+
+[node name="I3" parent="InventoryMenu/Backpack/Contents" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 410, 292 )
+scale = Vector2( 3, 3 )
+
+[node name="I4" parent="InventoryMenu/Backpack/Contents" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 500, 292 )
+scale = Vector2( 3, 3 )
+
+[node name="I5" parent="InventoryMenu/Backpack/Contents" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 590, 292 )
+scale = Vector2( 3, 3 )
+
+[node name="Label" type="Label" parent="InventoryMenu/Backpack/Contents"]
+margin_left = 420.0
+margin_top = 322.0
+margin_right = 501.0
+margin_bottom = 330.0
+rect_scale = Vector2( 2, 2 )
+text = "Click an item to equip it"
+
+[connection signal="pressed" from="MartialWeapon" to="." method="_on_MartialWeapon_pressed"]
+[connection signal="pressed" from="MagicWeapon" to="." method="_on_MagicWeapon_pressed"]
+[connection signal="pressed" from="Helm" to="." method="_on_Helm_pressed"]
+[connection signal="pressed" from="Charm" to="." method="_on_Charm_pressed"]
+[connection signal="pressed" from="Armor" to="." method="_on_Armor_pressed"]
+[connection signal="pressed" from="Ring" to="." method="_on_Ring_pressed"]
+[connection signal="pressed" from="Boots" to="." method="_on_Boots_pressed"]
+[connection signal="pressed" from="Gauntlets" to="." method="_on_Gauntlets_pressed"]
+[connection signal="pressed" from="Shield" to="." method="_on_Shield_pressed"]
+[connection signal="pressed" from="Item" to="." method="_on_Item_pressed"]
+[connection signal="pressed" from="Ammunition" to="." method="_on_Ammunition_pressed"]
+[connection signal="pressed" from="Coins" to="." method="_on_Coins_pressed"]
+[connection signal="down_arrow_pressed" from="InventoryMenu/Backpack" to="." method="_on_Backpack_down_arrow_pressed"]
+[connection signal="up_arrow_pressed" from="InventoryMenu/Backpack" to="." method="_on_Backpack_up_arrow_pressed"]
+[connection signal="pressed" from="InventoryMenu/Backpack/Contents/I0" to="." method="_on_I0_pressed"]
+[connection signal="pressed" from="InventoryMenu/Backpack/Contents/I1" to="." method="_on_I1_pressed"]
+[connection signal="pressed" from="InventoryMenu/Backpack/Contents/I2" to="." method="_on_I2_pressed"]
+[connection signal="pressed" from="InventoryMenu/Backpack/Contents/I3" to="." method="_on_I3_pressed"]
+[connection signal="pressed" from="InventoryMenu/Backpack/Contents/I4" to="." method="_on_I4_pressed"]
+[connection signal="pressed" from="InventoryMenu/Backpack/Contents/I5" to="." method="_on_I5_pressed"]

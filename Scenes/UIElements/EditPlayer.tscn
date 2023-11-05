@@ -1,0 +1,282 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Scenes/UIElements/MenuBook.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/User Interface/hair1.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/EditPlayer.gd" type="Script" id=3]
+[ext_resource path="res://assets/User Interface/hair4.png" type="Texture" id=4]
+[ext_resource path="res://assets/User Interface/hair3.png" type="Texture" id=5]
+[ext_resource path="res://assets/User Interface/hair0.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/UIElements/PlayerProxy.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/User Interface/hair2.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/UIv2/Label.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/UIv2/Button.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/UIv2/LineEdit.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/UI v2/LeftArrow.png" type="Texture" id=12]
+[ext_resource path="res://assets/UI v2/RightArrow.png" type="Texture" id=13]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.458824, 0.247059, 0.223529, 1 )
+border_width_left = 3
+border_width_top = 2
+border_width_right = 2
+border_color = Color( 0.458824, 0.247059, 0.223529, 1 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 2
+border_width_right = 1
+border_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.247059, 0.156863, 0.196078, 1 )
+border_width_left = 2
+border_width_top = 3
+border_width_right = 1
+border_color = Color( 0.247059, 0.156863, 0.196078, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.247059, 0.156863, 0.196078, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.690196, 0.411765, 0.298039, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.917647, 0.835294, 0.666667, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.917647, 0.835294, 0.666667, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.917647, 0.835294, 0.666667, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.917647, 0.835294, 0.666667, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.917647, 0.835294, 0.666667, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="EditPlayer" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1000.0
+margin_bottom = 500.0
+color = Color( 0, 0, 0, 0 )
+
+[node name="MenuBook" parent="." instance=ExtResource( 1 )]
+visible = false
+activateOnReady = true
+
+[node name="LeftPage" type="Node2D" parent="MenuBook"]
+visible = false
+
+[node name="Title" parent="MenuBook/LeftPage" instance=ExtResource( 9 )]
+margin_left = -62.0
+margin_top = -48.0
+margin_right = -21.0
+margin_bottom = -40.0
+rect_scale = Vector2( 1.2, 1.2 )
+text = "Edit Player"
+
+[node name="NameLabel" type="Label" parent="MenuBook/LeftPage"]
+margin_left = -65.0
+margin_top = -38.0
+margin_right = -42.0
+margin_bottom = -30.0
+rect_scale = Vector2( 0.6, 0.6 )
+text = "Name:"
+
+[node name="NameInput" parent="MenuBook/LeftPage" instance=ExtResource( 11 )]
+margin_left = -66.0
+margin_top = -32.0
+margin_right = -10.0
+margin_bottom = -24.0
+max_length = 15
+
+[node name="PlayerProxy" parent="MenuBook/LeftPage" instance=ExtResource( 7 )]
+position = Vector2( -39, -10 )
+
+[node name="Button" parent="MenuBook/LeftPage" instance=ExtResource( 10 )]
+margin_left = -65.0
+margin_top = 33.0
+margin_right = -11.0
+margin_bottom = 41.0
+text = "Save Player"
+
+[node name="RightPage" type="Node2D" parent="MenuBook"]
+visible = false
+
+[node name="TabContainer" type="TabContainer" parent="MenuBook/RightPage"]
+margin_left = 3.0
+margin_top = -51.0
+margin_right = 193.0
+margin_bottom = 240.0
+rect_scale = Vector2( 0.333, 0.333 )
+custom_icons/increment_highlight = ExtResource( 13 )
+custom_icons/increment = ExtResource( 13 )
+custom_icons/decrement_highlight = ExtResource( 12 )
+custom_icons/decrement = ExtResource( 12 )
+custom_styles/tab_fg = SubResource( 1 )
+custom_styles/tab_disabled = SubResource( 14 )
+custom_styles/tab_bg = SubResource( 13 )
+custom_styles/panel = SubResource( 2 )
+tab_align = 0
+
+[node name="Hair" type="Tabs" parent="MenuBook/RightPage/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = 13.0
+margin_right = -2.0
+margin_bottom = -2.0
+rect_scale = Vector2( 3, 3 )
+
+[node name="ColorPicker" type="ColorPicker" parent="MenuBook/RightPage/TabContainer/Hair"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 302.0
+margin_bottom = 402.0
+rect_scale = Vector2( 0.2, 0.2 )
+edit_alpha = false
+presets_enabled = false
+presets_visible = false
+
+[node name="HairStyle" type="OptionButton" parent="MenuBook/RightPage/TabContainer/Hair"]
+margin_left = 2.0
+margin_top = 75.0
+margin_right = 85.0
+margin_bottom = 97.0
+rect_scale = Vector2( 0.7, 0.7 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_icons/arrow = ExtResource( 13 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/focus = SubResource( 5 )
+custom_styles/disabled = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+text = "Monk Cut"
+icon = ExtResource( 6 )
+items = [ "Monk Cut", ExtResource( 6 ), false, 0, null, "Soldier Cut", ExtResource( 2 ), false, 1, null, "Careless Cut", ExtResource( 8 ), false, 2, null, "Mullet", ExtResource( 5 ), false, 3, null, "Free Cut", ExtResource( 4 ), false, 4, null ]
+selected = 0
+
+[node name="Eyes" type="Tabs" parent="MenuBook/RightPage/TabContainer"]
+visible = false
+margin_left = 2.0
+margin_top = 57.0
+margin_right = 2.0
+margin_bottom = 75.0
+rect_scale = Vector2( 3, 3 )
+
+[node name="ColorPicker" type="ColorPicker" parent="MenuBook/RightPage/TabContainer/Eyes"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 302.0
+margin_bottom = 402.0
+rect_scale = Vector2( 0.2, 0.2 )
+edit_alpha = false
+presets_enabled = false
+presets_visible = false
+
+[node name="Skin" type="Tabs" parent="MenuBook/RightPage/TabContainer"]
+visible = false
+margin_left = 2.0
+margin_top = 57.0
+margin_right = 2.0
+margin_bottom = 75.0
+rect_scale = Vector2( 3, 3 )
+
+[node name="ColorPicker" type="ColorPicker" parent="MenuBook/RightPage/TabContainer/Skin"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 302.0
+margin_bottom = 402.0
+rect_scale = Vector2( 0.2, 0.2 )
+edit_alpha = false
+presets_enabled = false
+presets_visible = false
+
+[node name="Shirt" type="Tabs" parent="MenuBook/RightPage/TabContainer"]
+visible = false
+margin_left = 2.0
+margin_top = 57.0
+margin_right = 2.0
+margin_bottom = 75.0
+rect_scale = Vector2( 3, 3 )
+
+[node name="ColorPicker" type="ColorPicker" parent="MenuBook/RightPage/TabContainer/Shirt"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 302.0
+margin_bottom = 402.0
+rect_scale = Vector2( 0.2, 0.2 )
+edit_alpha = false
+presets_enabled = false
+presets_visible = false
+
+[node name="Pants" type="Tabs" parent="MenuBook/RightPage/TabContainer"]
+visible = false
+margin_left = 2.0
+margin_top = 57.0
+margin_right = 2.0
+margin_bottom = 75.0
+rect_scale = Vector2( 3, 3 )
+
+[node name="ColorPicker" type="ColorPicker" parent="MenuBook/RightPage/TabContainer/Pants"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 302.0
+margin_bottom = 402.0
+rect_scale = Vector2( 0.2, 0.2 )
+edit_alpha = false
+presets_enabled = false
+presets_visible = false
+
+[node name="Shoes" type="Tabs" parent="MenuBook/RightPage/TabContainer"]
+visible = false
+margin_left = 2.0
+margin_top = 57.0
+margin_right = 2.0
+margin_bottom = 75.0
+rect_scale = Vector2( 3, 3 )
+
+[node name="ColorPicker" type="ColorPicker" parent="MenuBook/RightPage/TabContainer/Shoes"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 302.0
+margin_bottom = 402.0
+rect_scale = Vector2( 0.2, 0.2 )
+edit_alpha = false
+presets_enabled = false
+presets_visible = false
+
+[connection signal="left_arrow_pressed" from="MenuBook" to="." method="_on_Menu_Book_left_arrow_pressed"]
+[connection signal="right_arrow_pressed" from="MenuBook" to="." method="_on_Menu_Book_right_arrow_pressed"]
+[connection signal="pressed" from="MenuBook/LeftPage/Button" to="." method="_on_Submit_Button_pressed"]
+[connection signal="tab_changed" from="MenuBook/RightPage/TabContainer" to="." method="_on_TabContainer_tab_changed"]
+[connection signal="item_selected" from="MenuBook/RightPage/TabContainer/Hair/HairStyle" to="." method="_on_HairStyle_item_selected"]

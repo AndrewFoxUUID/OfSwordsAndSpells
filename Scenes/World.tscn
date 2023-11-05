@@ -1,0 +1,103 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Scenes/UIElements/WorldMap.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/UIv2/PanelContainer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/UIv2/Label.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/UIv2/Panel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/Arbor.gd" type="Script" id=5]
+
+[sub_resource type="Shader" id=1]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+
+uniform bool greyscale = false;
+
+void fragment() {
+	vec4 current_color = texture(TEXTURE, UV);
+	if (greyscale) {
+		float a = (current_color.r + current_color.g + current_color.b) / float(3);
+		COLOR = vec4(a, a, a, current_color.a);
+	} else {
+		COLOR = current_color;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+resource_local_to_scene = true
+shader = SubResource( 1 )
+shader_param/greyscale = false
+
+[sub_resource type="Shader" id=3]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+
+uniform bool greyscale = false;
+
+void fragment() {
+	vec4 current_color = texture(TEXTURE, UV);
+	if (greyscale) {
+		float a = (current_color.r + current_color.g + current_color.b) / float(3);
+		COLOR = vec4(a, a, a, current_color.a);
+	} else {
+		COLOR = current_color;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id=4]
+resource_local_to_scene = true
+shader = SubResource( 3 )
+shader_param/greyscale = false
+
+[node name="World" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="TileMap" parent="." instance=ExtResource( 1 )]
+material = SubResource( 2 )
+position = Vector2( -280, -660 )
+scale = Vector2( 2, 2 )
+
+[node name="VisibleTiles" parent="." instance=ExtResource( 1 )]
+visible = false
+material = SubResource( 4 )
+position = Vector2( -280, -660 )
+scale = Vector2( 2, 2 )
+
+[node name="SelectedTileInfo" type="Node2D" parent="."]
+z_index = 1
+
+[node name="PanelContainer" parent="SelectedTileInfo" instance=ExtResource( 2 )]
+margin_top = 420.0
+margin_right = 500.0
+margin_bottom = 460.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="Panel" parent="SelectedTileInfo/PanelContainer" instance=ExtResource( 4 )]
+margin_left = 8.0
+margin_top = 3.0
+margin_right = 492.0
+margin_bottom = 33.0
+
+[node name="TileName" parent="SelectedTileInfo/PanelContainer/Panel" instance=ExtResource( 3 )]
+margin_left = 0.5
+margin_top = 0.5
+margin_right = 26.5
+margin_bottom = 8.5
+rect_scale = Vector2( 2, 2 )
+text = "Town"
+
+[node name="Label" parent="SelectedTileInfo/PanelContainer/Panel" instance=ExtResource( 3 )]
+margin_left = 2.0
+margin_top = 18.0
+margin_right = 41.0
+margin_bottom = 26.0
+text = "unexplored"
+flat = true
+dark = true
+
+[node name="ExitInstruction" parent="SelectedTileInfo/PanelContainer/Panel" instance=ExtResource( 3 )]
+margin_left = 385.0
+margin_top = 1.0
+margin_right = 483.0
+margin_bottom = 9.0
+text = "Press <enter> to Enter Tile"
+flat = true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/OfSwordsAndSpellsTheme.mp3-c40c9f1af7d18835c569d7fa6b102714.mp3str"
+
+[deps]
+
+source_file="res://assets/Unused_Queue/OfSwordsAndSpellsTheme.mp3"
+dest_files=[ "res://.import/OfSwordsAndSpellsTheme.mp3-c40c9f1af7d18835c569d7fa6b102714.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

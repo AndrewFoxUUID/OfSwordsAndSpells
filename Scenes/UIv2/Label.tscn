@@ -1,0 +1,42 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/UI v2/minimalpixelfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/UI v2/layer2.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/UI v2/layer3.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scripts/Label.gd" type="Script" id=4]
+[ext_resource path="res://assets/UI v2/layer1.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=3]
+size = 6
+outline_color = Color( 0.933333, 0.956863, 1, 1 )
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 2
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 5
+font_data = ExtResource( 3 )
+
+[node name="Label" type="Label"]
+margin_bottom = 8.0
+custom_fonts/font = ExtResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Layer1" type="Label" parent="."]
+margin_bottom = 7.0
+custom_colors/font_color = Color( 0.94902, 0.968627, 1, 1 )
+custom_fonts/font = SubResource( 3 )
+
+[node name="Layer2" type="Label" parent="."]
+margin_top = 5.0
+margin_bottom = 7.0
+custom_colors/font_color = Color( 0.705882, 0.72549, 0.811765, 1 )
+custom_fonts/font = SubResource( 1 )
+
+[node name="Layer3" type="Label" parent="."]
+margin_top = 1.0
+margin_bottom = 8.0
+custom_colors/font_color = Color( 0.203922, 0.223529, 0.25098, 1 )
+custom_fonts/font = SubResource( 2 )

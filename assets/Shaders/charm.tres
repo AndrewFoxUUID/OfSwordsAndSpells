@@ -1,0 +1,33 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=84]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+
+const vec4 original_charm = vec4(0.00, 0.40, 0.20, 1.00);
+const vec4 original_charm_flair = vec4(0.33, 0.00, 0.00, 1.00);
+
+uniform vec4 charm : hint_color = vec4(0.00, 0.40, 0.20, 1.00);
+uniform vec4 charm_flair : hint_color = vec4(0.33, 0.00, 0.00, 1.00);
+
+bool color_equals(vec4 c1, vec4 c2) {
+	return abs(c1.r - c2.r) < 0.02 && abs(c1.g - c2.g) < 0.02 && abs(c1.b - c2.b) < 0.02 && abs(c1.a - c2.a) < 0.02;
+}
+
+void fragment() {
+	vec4 current_color = texture(TEXTURE, UV);
+	
+	if (color_equals(current_color, original_charm)) {
+		COLOR = charm;
+	} else if (color_equals(current_color, original_charm_flair)) {
+		COLOR = charm_flair;
+	} else {
+		COLOR = current_color;
+	}
+}"
+
+[resource]
+resource_local_to_scene = true
+shader = SubResource( 84 )
+shader_param/charm = Color( 0, 0.4, 0.2, 1 )
+shader_param/charm_flair = Color( 0.33, 0, 0, 1 )

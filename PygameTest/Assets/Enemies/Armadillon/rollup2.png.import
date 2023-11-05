@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/rollup2.png-9a5cdcf2c37a0f1a1cec9c5a0365fb5f.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://PygameTest/Assets/Enemies/Armadillon/rollup2.png"
+dest_files=[ "res://.import/rollup2.png-9a5cdcf2c37a0f1a1cec9c5a0365fb5f.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

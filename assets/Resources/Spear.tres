@@ -1,0 +1,186 @@
+[gd_resource type="SpriteFrames" load_steps=97 format=2]
+
+[ext_resource path="res://assets/Player/Spear_07.png" type="Texture" id=1]
+[ext_resource path="res://assets/Player/Spear_20.png" type="Texture" id=2]
+[ext_resource path="res://assets/Player/Spear_25.png" type="Texture" id=3]
+[ext_resource path="res://assets/Player/Spear_36.png" type="Texture" id=4]
+[ext_resource path="res://assets/Player/Spear_50.png" type="Texture" id=5]
+[ext_resource path="res://assets/Player/Spear_42.png" type="Texture" id=6]
+[ext_resource path="res://assets/Player/Spear_44.png" type="Texture" id=7]
+[ext_resource path="res://assets/Player/Spear_57.png" type="Texture" id=8]
+[ext_resource path="res://assets/Player/Spear_62.png" type="Texture" id=9]
+[ext_resource path="res://assets/Player/Spear_65.png" type="Texture" id=10]
+[ext_resource path="res://assets/Player/Spear_02.png" type="Texture" id=11]
+[ext_resource path="res://assets/Player/Spear_05.png" type="Texture" id=12]
+[ext_resource path="res://assets/Player/Spear_08.png" type="Texture" id=13]
+[ext_resource path="res://assets/Player/Spear_06.png" type="Texture" id=14]
+[ext_resource path="res://assets/Player/Spear_13.png" type="Texture" id=15]
+[ext_resource path="res://assets/Player/Spear_11.png" type="Texture" id=16]
+[ext_resource path="res://assets/Player/Spear_15.png" type="Texture" id=17]
+[ext_resource path="res://assets/Player/Spear_18.png" type="Texture" id=18]
+[ext_resource path="res://assets/Player/Spear_23.png" type="Texture" id=19]
+[ext_resource path="res://assets/Player/Spear_34.png" type="Texture" id=20]
+[ext_resource path="res://assets/Player/Spear_27.png" type="Texture" id=21]
+[ext_resource path="res://assets/Player/Spear_31.png" type="Texture" id=22]
+[ext_resource path="res://assets/Player/Spear_48.png" type="Texture" id=23]
+[ext_resource path="res://assets/Player/Spear_45.png" type="Texture" id=24]
+[ext_resource path="res://assets/Player/Spear_58.png" type="Texture" id=25]
+[ext_resource path="res://assets/Player/Spear_53.png" type="Texture" id=26]
+[ext_resource path="res://assets/Player/Spear_59.png" type="Texture" id=27]
+[ext_resource path="res://assets/Player/Spear_60.png" type="Texture" id=28]
+[ext_resource path="res://assets/Player/Spear_63.png" type="Texture" id=29]
+[ext_resource path="res://assets/Player/Spear_68.png" type="Texture" id=30]
+[ext_resource path="res://assets/Player/Spear_66.png" type="Texture" id=31]
+[ext_resource path="res://assets/Player/Spear_72.png" type="Texture" id=32]
+[ext_resource path="res://assets/Player/Spear_70.png" type="Texture" id=33]
+[ext_resource path="res://assets/Player/Spear_77.png" type="Texture" id=34]
+[ext_resource path="res://assets/Player/Spear_79.png" type="Texture" id=35]
+[ext_resource path="res://assets/Player/Spear_78.png" type="Texture" id=36]
+[ext_resource path="res://assets/Player/Spear_87.png" type="Texture" id=37]
+[ext_resource path="res://assets/Player/Spear_03.png" type="Texture" id=38]
+[ext_resource path="res://assets/Player/Spear_09.png" type="Texture" id=39]
+[ext_resource path="res://assets/Player/Spear_12.png" type="Texture" id=40]
+[ext_resource path="res://assets/Player/Spear_14.png" type="Texture" id=41]
+[ext_resource path="res://assets/Player/Spear_17.png" type="Texture" id=42]
+[ext_resource path="res://assets/Player/Spear_19.png" type="Texture" id=43]
+[ext_resource path="res://assets/Player/Spear_22.png" type="Texture" id=44]
+[ext_resource path="res://assets/Player/Spear_33.png" type="Texture" id=45]
+[ext_resource path="res://assets/Player/Spear_29.png" type="Texture" id=46]
+[ext_resource path="res://assets/Player/Spear_32.png" type="Texture" id=47]
+[ext_resource path="res://assets/Player/Spear_38.png" type="Texture" id=48]
+[ext_resource path="res://assets/Player/Spear_43.png" type="Texture" id=49]
+[ext_resource path="res://assets/Player/Spear_40.png" type="Texture" id=50]
+[ext_resource path="res://assets/Player/Spear_41.png" type="Texture" id=51]
+[ext_resource path="res://assets/Player/Spear_46.png" type="Texture" id=52]
+[ext_resource path="res://assets/Player/Spear_51.png" type="Texture" id=53]
+[ext_resource path="res://assets/Player/Spear_52.png" type="Texture" id=54]
+[ext_resource path="res://assets/Player/Spear_54.png" type="Texture" id=55]
+[ext_resource path="res://assets/Player/Spear_56.png" type="Texture" id=56]
+[ext_resource path="res://assets/Player/Spear_64.png" type="Texture" id=57]
+[ext_resource path="res://assets/Player/Spear_71.png" type="Texture" id=58]
+[ext_resource path="res://assets/Player/Spear_69.png" type="Texture" id=59]
+[ext_resource path="res://assets/Player/Spear_76.png" type="Texture" id=60]
+[ext_resource path="res://assets/Player/Spear_73.png" type="Texture" id=61]
+[ext_resource path="res://assets/Player/Spear_75.png" type="Texture" id=62]
+[ext_resource path="res://assets/Player/Spear_82.png" type="Texture" id=63]
+[ext_resource path="res://assets/Player/Spear_80.png" type="Texture" id=64]
+[ext_resource path="res://assets/Player/Spear_83.png" type="Texture" id=65]
+[ext_resource path="res://assets/Player/Spear_86.png" type="Texture" id=66]
+[ext_resource path="res://assets/Player/Spear_88.png" type="Texture" id=67]
+[ext_resource path="res://assets/Player/Spear_01.png" type="Texture" id=68]
+[ext_resource path="res://assets/Player/Spear_04.png" type="Texture" id=69]
+[ext_resource path="res://assets/Player/Spear_10.png" type="Texture" id=70]
+[ext_resource path="res://assets/Player/Spear_24.png" type="Texture" id=71]
+[ext_resource path="res://assets/Player/Spear_16.png" type="Texture" id=72]
+[ext_resource path="res://assets/Player/Spear_21.png" type="Texture" id=73]
+[ext_resource path="res://assets/Player/Spear_28.png" type="Texture" id=74]
+[ext_resource path="res://assets/Player/Spear_26.png" type="Texture" id=75]
+[ext_resource path="res://assets/Player/Spear_35.png" type="Texture" id=76]
+[ext_resource path="res://assets/Player/Spear_37.png" type="Texture" id=77]
+[ext_resource path="res://assets/Player/Spear_30.png" type="Texture" id=78]
+[ext_resource path="res://assets/Player/Spear_67.png" type="Texture" id=79]
+[ext_resource path="res://assets/Player/Spear_39.png" type="Texture" id=80]
+[ext_resource path="res://assets/Player/Spear_47.png" type="Texture" id=81]
+[ext_resource path="res://assets/Player/Spear_49.png" type="Texture" id=82]
+[ext_resource path="res://assets/Player/Spear_55.png" type="Texture" id=83]
+[ext_resource path="res://assets/Player/Spear_61.png" type="Texture" id=84]
+[ext_resource path="res://assets/Player/Spear_74.png" type="Texture" id=85]
+[ext_resource path="res://assets/Player/Spear_84.png" type="Texture" id=86]
+[ext_resource path="res://assets/Player/Spear_81.png" type="Texture" id=87]
+[ext_resource path="res://assets/Player/Spear_85.png" type="Texture" id=88]
+[ext_resource path="res://assets/Player/Spear_90.png" type="Texture" id=89]
+[ext_resource path="res://assets/Player/Spear_94.png" type="Texture" id=90]
+[ext_resource path="res://assets/Player/Spear_96.png" type="Texture" id=91]
+[ext_resource path="res://assets/Player/Spear_93.png" type="Texture" id=92]
+[ext_resource path="res://assets/Player/Spear_89.png" type="Texture" id=93]
+[ext_resource path="res://assets/Player/Spear_91.png" type="Texture" id=94]
+[ext_resource path="res://assets/Player/Spear_92.png" type="Texture" id=95]
+[ext_resource path="res://assets/Player/Spear_95.png" type="Texture" id=96]
+
+[resource]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 35 ), ExtResource( 64 ), ExtResource( 87 ), ExtResource( 63 ), ExtResource( 65 ), ExtResource( 86 ), ExtResource( 88 ), ExtResource( 66 ) ],
+"loop": false,
+"name": "Block",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 73 ), ExtResource( 44 ) ],
+"loop": false,
+"name": "Land",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 18 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 77 ), ExtResource( 48 ), ExtResource( 80 ), ExtResource( 50 ), ExtResource( 51 ) ],
+"loop": false,
+"name": "Cross",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 45 ), ExtResource( 20 ), ExtResource( 76 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "Jab",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 67 ), ExtResource( 93 ), ExtResource( 89 ) ],
+"loop": false,
+"name": "Hurt",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 94 ), ExtResource( 95 ), ExtResource( 92 ), ExtResource( 90 ), ExtResource( 96 ), ExtResource( 91 ) ],
+"loop": false,
+"name": "Die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 49 ), ExtResource( 7 ), ExtResource( 24 ), ExtResource( 52 ), ExtResource( 81 ), ExtResource( 23 ), ExtResource( 82 ) ],
+"loop": false,
+"name": "Sword",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 26 ), ExtResource( 55 ) ],
+"loop": false,
+"name": "Spear",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 83 ), ExtResource( 56 ), ExtResource( 8 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 84 ) ],
+"loop": false,
+"name": "Axe",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 29 ), ExtResource( 57 ), ExtResource( 10 ), ExtResource( 31 ), ExtResource( 79 ), ExtResource( 30 ), ExtResource( 59 ), ExtResource( 33 ) ],
+"loop": false,
+"name": "Dagger",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 71 ), ExtResource( 3 ), ExtResource( 75 ), ExtResource( 21 ), ExtResource( 74 ), ExtResource( 46 ), ExtResource( 78 ), ExtResource( 22 ) ],
+"loop": false,
+"name": "Roll",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 70 ), ExtResource( 16 ), ExtResource( 40 ), ExtResource( 15 ), ExtResource( 41 ), ExtResource( 17 ), ExtResource( 72 ) ],
+"loop": true,
+"name": "Run",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 68 ), ExtResource( 11 ), ExtResource( 38 ), ExtResource( 69 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 1 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 58 ), ExtResource( 32 ), ExtResource( 61 ), ExtResource( 85 ), ExtResource( 62 ), ExtResource( 60 ), ExtResource( 34 ), ExtResource( 36 ) ],
+"loop": false,
+"name": "Club",
+"speed": 10.0
+} ]

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Structures/Background_House_1.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/BackgroundShortHouse.gd" type="Script" id=2]
+
+[node name="BackgroundShortHouse" type="Sprite"]
+scale = Vector2( 5, 5 )
+texture = ExtResource( 1 )
+centered = false
+script = ExtResource( 2 )

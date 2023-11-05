@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ScreenRecorderProject1.mp3-178a6596010c2c4d4404528eefa636c6.mp3str"
+
+[deps]
+
+source_file="res://assets/Unused_Queue/ScreenRecorderProject1.mp3"
+dest_files=[ "res://.import/ScreenRecorderProject1.mp3-178a6596010c2c4d4404528eefa636c6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

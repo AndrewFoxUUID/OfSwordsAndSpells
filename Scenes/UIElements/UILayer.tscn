@@ -1,0 +1,188 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Scenes/UIElements/SpellSlots.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/UIv2/Label.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/User Interface/boss_health_bar.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/UIElements/Inventory.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/UILayer.gd" type="Script" id=5]
+[ext_resource path="res://assets/User Interface/melee_border_bottom.png" type="Texture" id=6]
+[ext_resource path="res://assets/User Interface/magic_border_bottom.png" type="Texture" id=7]
+[ext_resource path="res://assets/User Interface/melee_border_top.png" type="Texture" id=8]
+[ext_resource path="res://assets/User Interface/magic_border_top.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/UIElements/PlaneSpin.tscn" type="PackedScene" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Shader" id=3]
+code = "shader_type canvas_item;
+
+const vec4 lightning_color = vec4(1.0, 1.0, 1.0, 1.0);
+
+const float size = 0.0;//0.05;
+const float width = 1.0;
+const float speed = 1.0;
+const float cycle = 2.0;
+//const float ratio = 0.0;
+const float time_shift = 1.0;
+const float PI = 3.14159265359;
+
+float rand(float x){
+	return fract(sin(x)*100000.0);
+}
+
+void fragment(){
+	float bolt = abs(mod(UV.x * cycle + (rand(TIME) + time_shift) * speed * -1., 0.5)-0.25)-0.125;
+	bolt *= 4. * width;
+	
+	float wave = abs(UV.y - 0.5 + bolt);
+	wave = 1. - step(size*.5, wave);
+	
+	//float blink = step(rand(TIME)*ratio, .5);
+	//wave *= blink;
+	
+	vec4 display = vec4(66.0/255.0, 3.0/255.0, 97.0/255.0, 1.0);
+	display += lightning_color * vec4(wave);
+	
+	COLOR = display;
+}
+"
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = SubResource( 3 )
+
+[node name="UILayer" type="CanvasLayer"]
+pause_mode = 2
+layer = 2
+script = ExtResource( 5 )
+
+[node name="Border" type="Control" parent="."]
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Border"]
+margin_right = 168.0
+margin_bottom = 478.0
+mouse_filter = 2
+
+[node name="ColorRect2" type="ColorRect" parent="Border"]
+margin_left = 832.0
+margin_right = 1000.0
+margin_bottom = 478.0
+mouse_filter = 2
+
+[node name="ColorRect3" type="ColorRect" parent="Border"]
+margin_right = 832.0
+margin_bottom = 2.0
+mouse_filter = 2
+
+[node name="ColorRect4" type="ColorRect" parent="Border"]
+margin_top = 478.0
+margin_right = 1000.0
+margin_bottom = 480.0
+mouse_filter = 2
+
+[node name="LeftCorner" type="AnimatedSprite" parent="Border"]
+position = Vector2( 208, 440 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+
+[node name="RightCorner" type="AnimatedSprite" parent="Border"]
+position = Vector2( 794, 42 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+frame = 1
+
+[node name="EquipmentMenu" parent="." instance=ExtResource( 4 )]
+pause_mode = 1
+
+[node name="SpellSlots" parent="." instance=ExtResource( 1 )]
+pause_mode = 1
+
+[node name="SoulEnergyBar" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="SoulEnergyBar"]
+margin_top = 480.0
+margin_right = 104.0
+margin_bottom = 500.0
+color = Color( 0.301961, 0.290196, 0.305882, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="SoulEnergyBar"]
+margin_left = 104.0
+margin_top = 480.0
+margin_right = 1000.0
+margin_bottom = 500.0
+color = Color( 0.054902, 0.054902, 0.0627451, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="SoulEnergyBar"]
+material = SubResource( 4 )
+margin_left = 104.0
+margin_top = 480.0
+margin_right = 1000.0
+margin_bottom = 500.0
+color = Color( 0.258824, 0.0117647, 0.380392, 1 )
+
+[node name="LevelLabel" parent="SoulEnergyBar" instance=ExtResource( 2 )]
+margin_left = 4.0
+margin_top = 484.0
+margin_right = 31.0
+margin_bottom = 492.0
+rect_scale = Vector2( 2, 2 )
+text = "Level 0"
+
+[node name="Label" parent="SoulEnergyBar" instance=ExtResource( 2 )]
+margin_left = 110.0
+margin_top = 484.0
+margin_right = 122.0
+margin_bottom = 492.0
+rect_scale = Vector2( 2, 2 )
+text = "0/2"
+flat = true
+dark = true
+
+[node name="Hearts" type="Node2D" parent="."]
+
+[node name="RadiantEnergy" type="Node2D" parent="."]
+
+[node name="ShadowEnergy" type="Node2D" parent="."]
+
+[node name="LifeEnergy" type="Node2D" parent="."]
+
+[node name="DeathEnergy" type="Node2D" parent="."]
+
+[node name="ForgeEnergy" type="Node2D" parent="."]
+
+[node name="TrueEnergy" type="Node2D" parent="."]
+
+[node name="NullEnergy" type="Node2D" parent="."]
+
+[node name="PlaneSpin" parent="." instance=ExtResource( 10 )]
+position = Vector2( 501, 28 )
+scale = Vector2( 4, 4 )
+
+[node name="BossHealthBar" type="Sprite" parent="."]
+visible = false
+position = Vector2( 500, 26 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="BossHealthBar"]
+margin_left = -43.0
+margin_top = -3.0
+margin_right = 58.0
+margin_bottom = 3.0
+color = Color( 0.494118, 0.00784314, 0.121569, 1 )
+
+[connection signal="pressed" from="PlaneSpin" to="." method="_on_PlaneSpin_pressed"]

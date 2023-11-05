@@ -1,0 +1,106 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://Scripts/ArmorDealer.gd" type="Script" id=1]
+[ext_resource path="res://assets/NPCS/ArmorDealer/19.png" type="Texture" id=2]
+[ext_resource path="res://assets/NPCS/ArmorDealer/25.png" type="Texture" id=3]
+[ext_resource path="res://assets/NPCS/ArmorDealer/22.png" type="Texture" id=4]
+[ext_resource path="res://assets/NPCS/ArmorDealer/17.png" type="Texture" id=5]
+[ext_resource path="res://assets/NPCS/ArmorDealer/20.png" type="Texture" id=6]
+[ext_resource path="res://assets/NPCS/ArmorDealer/23.png" type="Texture" id=7]
+[ext_resource path="res://assets/NPCS/ArmorDealer/18.png" type="Texture" id=8]
+[ext_resource path="res://assets/NPCS/ArmorDealer/21.png" type="Texture" id=9]
+[ext_resource path="res://assets/NPCS/ArmorDealer/01.png" type="Texture" id=10]
+[ext_resource path="res://assets/NPCS/ArmorDealer/06.png" type="Texture" id=11]
+[ext_resource path="res://assets/NPCS/ArmorDealer/10.png" type="Texture" id=12]
+[ext_resource path="res://assets/NPCS/ArmorDealer/24.png" type="Texture" id=13]
+[ext_resource path="res://assets/NPCS/ArmorDealer/02.png" type="Texture" id=14]
+[ext_resource path="res://assets/NPCS/ArmorDealer/03.png" type="Texture" id=15]
+[ext_resource path="res://assets/NPCS/ArmorDealer/07.png" type="Texture" id=16]
+[ext_resource path="res://assets/NPCS/ArmorDealer/13.png" type="Texture" id=17]
+[ext_resource path="res://assets/NPCS/ArmorDealer/08.png" type="Texture" id=18]
+[ext_resource path="res://assets/NPCS/ArmorDealer/09.png" type="Texture" id=19]
+[ext_resource path="res://assets/NPCS/ArmorDealer/14.png" type="Texture" id=20]
+[ext_resource path="res://assets/NPCS/ArmorDealer/05.png" type="Texture" id=21]
+[ext_resource path="res://assets/NPCS/ArmorDealer/11.png" type="Texture" id=22]
+[ext_resource path="res://assets/NPCS/ArmorDealer/00.png" type="Texture" id=23]
+[ext_resource path="res://assets/NPCS/ArmorDealer/15.png" type="Texture" id=24]
+[ext_resource path="res://assets/NPCS/ArmorDealer/04.png" type="Texture" id=25]
+[ext_resource path="res://assets/NPCS/ArmorDealer/16.png" type="Texture" id=26]
+[ext_resource path="res://assets/NPCS/ArmorDealer/12.png" type="Texture" id=27]
+[ext_resource path="res://assets/TextPopup.tres" type="SpriteFrames" id=119]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 12 ), ExtResource( 22 ), ExtResource( 27 ), ExtResource( 17 ), ExtResource( 20 ), ExtResource( 24 ) ],
+"loop": false,
+"name": "Block",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "Hurt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 13 ), ExtResource( 3 ) ],
+"loop": false,
+"name": "Die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 25 ), ExtResource( 21 ), ExtResource( 11 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 8, 16.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 8, 16.5 )
+
+[node name="ArmorDealer" type="KinematicBody2D"]
+scale = Vector2( 2, 2 )
+z_index = 1
+collision_layer = 0
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 5 )
+animation = "Idle"
+frame = 1
+playing = true
+
+[node name="TextPopup" type="AnimatedSprite" parent="."]
+position = Vector2( -2, -60 )
+scale = Vector2( 2, 2 )
+frames = ExtResource( 119 )
+centered = false
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 13.0
+margin_top = -16.0
+margin_right = 83.0
+margin_bottom = -8.0
+rect_scale = Vector2( 0.7, 0.7 )
+text = "press <t> to interact"
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2( -1, 19.5 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( -1, 19.5 )
+shape = SubResource( 4 )
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

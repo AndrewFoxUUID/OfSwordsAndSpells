@@ -1,0 +1,43 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=84]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+
+const vec4 original_light_shield = vec4(0.32, 0.57, 0.44, 1.00);
+const vec4 original_shield = vec4(0.50, 0.74, 0.29, 1.00);
+const vec4 original_dark_shield = vec4(0.44, 0.60, 0.97, 1.00);
+const vec4 original_shield_flair = vec4(0.37, 0.43, 0.85, 1.00);
+
+uniform vec4 light_shield : hint_color = vec4(0.32, 0.57, 0.44, 1.00);
+uniform vec4 shield : hint_color = vec4(0.50, 0.74, 0.29, 1.00);
+uniform vec4 dark_shield : hint_color = vec4(0.44, 0.60, 0.97, 1.00);
+uniform vec4 shield_flair : hint_color = vec4(0.37, 0.43, 0.85, 1.00);
+
+bool color_equals(vec4 c1, vec4 c2) {
+	return abs(c1.r - c2.r) < 0.02 && abs(c1.g - c2.g) < 0.02 && abs(c1.b - c2.b) < 0.02 && abs(c1.a - c2.a) < 0.02;
+}
+
+void fragment() {
+	vec4 current_color = texture(TEXTURE, UV);
+	
+	if (color_equals(current_color, original_light_shield)) {
+		COLOR = light_shield;
+	} else if (color_equals(current_color, original_shield)) {
+		COLOR = shield;
+	} else if (color_equals(current_color, original_dark_shield)) {
+		COLOR = dark_shield;
+	} else if (color_equals(current_color, original_shield_flair)) {
+		COLOR = shield_flair;
+	} else {
+		COLOR = current_color;
+	}
+}"
+
+[resource]
+resource_local_to_scene = true
+shader = SubResource( 84 )
+shader_param/light_shield = Color( 0.32, 0.57, 0.44, 1 )
+shader_param/shield = Color( 0.5, 0.74, 0.29, 1 )
+shader_param/dark_shield = Color( 0.44, 0.6, 0.97, 1 )
+shader_param/shield_flair = Color( 0.37, 0.43, 0.85, 1 )

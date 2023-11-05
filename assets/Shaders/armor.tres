@@ -1,0 +1,43 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=84]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+
+const vec4 original_light_armor = vec4(0.41, 0.49, 0.24, 1.00);
+const vec4 original_armor = vec4(0.31, 0.37, 0.18, 1.00);
+const vec4 original_dark_armor = vec4(0.11, 0.15, 0.12, 1.00);
+const vec4 original_armor_flair = vec4(0.58, 0.64, 0.29, 1.00);
+
+uniform vec4 light_armor : hint_color = vec4(0.41, 0.49, 0.24, 1.00);
+uniform vec4 armor : hint_color = vec4(0.31, 0.37, 0.18, 1.00);
+uniform vec4 dark_armor : hint_color = vec4(0.11, 0.15, 0.12, 1.00);
+uniform vec4 armor_flair : hint_color = vec4(0.58, 0.64, 0.29, 1.00);
+
+bool color_equals(vec4 c1, vec4 c2) {
+	return abs(c1.r - c2.r) < 0.02 && abs(c1.g - c2.g) < 0.02 && abs(c1.b - c2.b) < 0.02 && abs(c1.a - c2.a) < 0.02;
+}
+
+void fragment() {
+	vec4 current_color = texture(TEXTURE, UV);
+	
+	if (color_equals(current_color, original_light_armor)) {
+		COLOR = light_armor;
+	} else if (color_equals(current_color, original_armor)) {
+		COLOR = armor;
+	} else if (color_equals(current_color, original_dark_armor)) {
+		COLOR = dark_armor;
+	} else if (color_equals(current_color, original_armor_flair)) {
+		COLOR = armor_flair;
+	} else {
+		COLOR = current_color;
+	}
+}"
+
+[resource]
+resource_local_to_scene = true
+shader = SubResource( 84 )
+shader_param/light_armor = Color( 0.41, 0.49, 0.24, 1 )
+shader_param/armor = Color( 0.31, 0.37, 0.18, 1 )
+shader_param/dark_armor = Color( 0.11, 0.15, 0.12, 1 )
+shader_param/armor_flair = Color( 0.58, 0.64, 0.29, 1 )

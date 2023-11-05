@@ -1,0 +1,348 @@
+[gd_scene load_steps=59 format=2]
+
+[ext_resource path="res://assets/Resources/Hair3.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://assets/Shaders/player.tres" type="Material" id=2]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=3]
+[ext_resource path="res://assets/Shaders/hair.tres" type="Material" id=4]
+[ext_resource path="res://assets/Shaders/shield.tres" type="Material" id=5]
+[ext_resource path="res://assets/Shaders/armor.tres" type="Material" id=6]
+[ext_resource path="res://assets/Shaders/charm.tres" type="Material" id=7]
+[ext_resource path="res://assets/Resources/Hair1.tres" type="SpriteFrames" id=8]
+[ext_resource path="res://assets/Resources/Player.tres" type="SpriteFrames" id=9]
+[ext_resource path="res://assets/Resources/Hair2.tres" type="SpriteFrames" id=10]
+[ext_resource path="res://assets/Resources/Hair4.tres" type="SpriteFrames" id=11]
+[ext_resource path="res://assets/Resources/Armor.tres" type="SpriteFrames" id=12]
+[ext_resource path="res://assets/Resources/Charm.tres" type="SpriteFrames" id=13]
+[ext_resource path="res://assets/Resources/Ring.tres" type="SpriteFrames" id=14]
+[ext_resource path="res://assets/Resources/Shield.tres" type="SpriteFrames" id=15]
+[ext_resource path="res://assets/Resources/Boots.tres" type="SpriteFrames" id=16]
+[ext_resource path="res://assets/Resources/Gauntlets.tres" type="SpriteFrames" id=17]
+[ext_resource path="res://assets/Resources/Helm.tres" type="SpriteFrames" id=18]
+[ext_resource path="res://assets/Resources/Sword.tres" type="SpriteFrames" id=19]
+[ext_resource path="res://assets/Resources/Spear.tres" type="SpriteFrames" id=20]
+[ext_resource path="res://assets/Resources/Axe.tres" type="SpriteFrames" id=21]
+[ext_resource path="res://assets/Resources/Dagger.tres" type="SpriteFrames" id=22]
+[ext_resource path="res://assets/Resources/Club.tres" type="SpriteFrames" id=23]
+[ext_resource path="res://assets/Shaders/helm.tres" type="Material" id=24]
+[ext_resource path="res://assets/Shaders/boots.tres" type="Material" id=25]
+[ext_resource path="res://assets/Shaders/gauntlets.tres" type="Material" id=26]
+[ext_resource path="res://assets/Shaders/ring.tres" type="Material" id=27]
+[ext_resource path="res://assets/Shaders/weapon.tres" type="Material" id=28]
+[ext_resource path="res://assets/Particles/Thunder Effect 02/Thunder Strike/Thunderstrike wo blur.png" type="Texture" id=29]
+[ext_resource path="res://assets/Particles/Thunder Effect 01/Thunder Projectile 1/Thunder projectile1 wo blur.png" type="Texture" id=30]
+
+[sub_resource type="RectangleShape2D" id=73]
+extents = Vector2( 8, 16.5 )
+
+[sub_resource type="RectangleShape2D" id=76]
+extents = Vector2( 6, 6 )
+
+[sub_resource type="RectangleShape2D" id=78]
+extents = Vector2( 6, 6 )
+
+[sub_resource type="RectangleShape2D" id=79]
+extents = Vector2( 24.5, 13.5 )
+
+[sub_resource type="RectangleShape2D" id=80]
+extents = Vector2( 13.5, 4.5 )
+
+[sub_resource type="RectangleShape2D" id=81]
+extents = Vector2( 21, 13.5 )
+
+[sub_resource type="RectangleShape2D" id=82]
+extents = Vector2( 3.5, 1.5 )
+
+[sub_resource type="RectangleShape2D" id=83]
+extents = Vector2( 20.5, 12.5 )
+
+[sub_resource type="AtlasTexture" id=84]
+atlas = ExtResource( 29 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=85]
+atlas = ExtResource( 29 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=86]
+atlas = ExtResource( 29 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=87]
+atlas = ExtResource( 29 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=88]
+atlas = ExtResource( 29 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=89]
+atlas = ExtResource( 29 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=90]
+atlas = ExtResource( 29 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=91]
+atlas = ExtResource( 29 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=92]
+atlas = ExtResource( 29 )
+region = Rect2( 512, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=93]
+atlas = ExtResource( 29 )
+region = Rect2( 576, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=94]
+atlas = ExtResource( 29 )
+region = Rect2( 640, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=95]
+atlas = ExtResource( 29 )
+region = Rect2( 704, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=96]
+atlas = ExtResource( 29 )
+region = Rect2( 768, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=97]
+animations = [ {
+"frames": [ SubResource( 84 ), SubResource( 85 ), SubResource( 86 ), SubResource( 87 ), SubResource( 88 ), SubResource( 89 ), SubResource( 90 ), SubResource( 91 ), SubResource( 92 ), SubResource( 93 ), SubResource( 94 ), SubResource( 95 ), SubResource( 96 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=98]
+atlas = ExtResource( 30 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=99]
+atlas = ExtResource( 30 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=100]
+atlas = ExtResource( 30 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=101]
+atlas = ExtResource( 30 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=102]
+atlas = ExtResource( 30 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=103]
+animations = [ {
+"frames": [ SubResource( 98 ), SubResource( 99 ), SubResource( 100 ), SubResource( 101 ), SubResource( 102 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+scale = Vector2( 2, 2 )
+z_index = 1
+collision_layer = 0
+collision_mask = 3
+script = ExtResource( 3 )
+
+[node name="SpriteLayers" type="Node2D" parent="."]
+
+[node name="Player" type="AnimatedSprite" parent="SpriteLayers"]
+material = ExtResource( 2 )
+frames = ExtResource( 9 )
+
+[node name="Hair1" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 4 )
+frames = ExtResource( 8 )
+
+[node name="Hair2" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 4 )
+frames = ExtResource( 10 )
+
+[node name="Hair3" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 4 )
+frames = ExtResource( 1 )
+
+[node name="Hair4" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 4 )
+frames = ExtResource( 11 )
+
+[node name="Shield" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 5 )
+frames = ExtResource( 15 )
+
+[node name="Armor" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 6 )
+frames = ExtResource( 12 )
+
+[node name="Charm" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 7 )
+frames = ExtResource( 13 )
+
+[node name="Helm" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 24 )
+frames = ExtResource( 18 )
+
+[node name="Boots" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 25 )
+frames = ExtResource( 16 )
+
+[node name="Gauntlets" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 26 )
+frames = ExtResource( 17 )
+
+[node name="Ring" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 27 )
+frames = ExtResource( 14 )
+
+[node name="Sword" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 28 )
+frames = ExtResource( 19 )
+
+[node name="Spear" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 28 )
+frames = ExtResource( 20 )
+
+[node name="Axe" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 28 )
+frames = ExtResource( 21 )
+
+[node name="Dagger" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 28 )
+frames = ExtResource( 22 )
+
+[node name="Club" type="AnimatedSprite" parent="SpriteLayers"]
+visible = false
+material = ExtResource( 28 )
+frames = ExtResource( 23 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 0, 19.5 )
+shape = SubResource( 73 )
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2( 0, 19.5 )
+shape = SubResource( 73 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_smoothed = true
+smoothing_enabled = true
+smoothing_speed = 8.0
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="JabArea" type="Area2D" parent="."]
+visible = false
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JabArea"]
+visible = false
+position = Vector2( 20, 11 )
+shape = SubResource( 76 )
+
+[node name="CrossArea" type="Area2D" parent="."]
+visible = false
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CrossArea"]
+visible = false
+position = Vector2( 20, 11 )
+shape = SubResource( 78 )
+
+[node name="SwordArea" type="Area2D" parent="."]
+visible = false
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwordArea"]
+visible = false
+position = Vector2( 10.5, 7.5 )
+shape = SubResource( 79 )
+
+[node name="SpearArea" type="Area2D" parent="."]
+visible = false
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpearArea"]
+visible = false
+position = Vector2( 22.5, 16.5 )
+shape = SubResource( 80 )
+
+[node name="AxeArea" type="Area2D" parent="."]
+visible = false
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AxeArea"]
+visible = false
+position = Vector2( 14, 9.5 )
+shape = SubResource( 81 )
+
+[node name="DaggerArea" type="Area2D" parent="."]
+visible = false
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DaggerArea"]
+visible = false
+position = Vector2( 8.5, 17.5 )
+shape = SubResource( 82 )
+
+[node name="ClubArea" type="Area2D" parent="."]
+visible = false
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClubArea"]
+visible = false
+position = Vector2( 10.5, 10.5 )
+shape = SubResource( 83 )
+
+[node name="TileFlash" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -18 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 97 )
+frame = 12
+speed_scale = 2.0
+playing = true
+
+[node name="EnterProjectile" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 0, 22 )
+rotation = 1.5708
+frames = SubResource( 103 )
+frame = 2
+speed_scale = 2.0
+playing = true
+
+[node name="EnergyRegenrationTimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[connection signal="animation_finished" from="SpriteLayers/Player" to="." method="_on_Sprite_animation_finished"]
+[connection signal="timeout" from="EnergyRegenrationTimer" to="." method="_on_EnergyRegenerationTimer_timeout"]

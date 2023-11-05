@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/Inventory Backgrounds/dialogue_back.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/UIv2/Label.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Dialogue.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Speaker.gd" type="Script" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Dialogue" type="Node2D"]
+position = Vector2( 500, -50 )
+script = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 3, 3 )
+frames = SubResource( 1 )
+
+[node name="Name" parent="." instance=ExtResource( 2 )]
+margin_left = -188.0
+margin_top = -47.0
+margin_right = -51.0
+margin_bottom = -39.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="CloseText" parent="." instance=ExtResource( 2 )]
+margin_left = 131.0
+margin_top = -45.0
+margin_right = 196.0
+margin_bottom = -37.0
+text = "Press <p> to Close"
+flat = true
+
+[node name="Label" parent="." instance=ExtResource( 2 )]
+margin_left = -186.0
+margin_top = -20.0
+margin_right = 89.0
+margin_bottom = 41.0
+autowrap = true
+flat = true
+dark = true
+
+[node name="Speaker" type="Sprite" parent="."]
+position = Vector2( 145, 12 )
+scale = Vector2( 6, 6 )
+script = ExtResource( 4 )

@@ -1,0 +1,68 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=84]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+
+const vec4 original_eye = vec4(0.15, 0.27, 0.56, 1.00);
+const vec4 original_dark_eye = vec4(0.05, 0.05, 0.06, 1.00);
+const vec4 original_skin = vec4(0.84, 0.71, 0.58, 1.00);
+const vec4 original_dark_skin = vec4(0.81, 0.62, 0.51, 1.00);
+const vec4 original_shirt = vec4(0.56, 0.22, 0.24, 1.00);
+const vec4 original_pants = vec4(0.42, 0.41, 0.36, 1.00);
+const vec4 original_dark_pants = vec4(0.30, 0.29, 0.31, 1.00);
+const vec4 original_shoe = vec4(0.57, 0.40, 0.30, 1.00);
+const vec4 original_dark_shoe = vec4(0.47, 0.33, 0.25, 1.00);
+
+uniform vec4 eye : hint_color = vec4(0.15, 0.27, 0.56, 1.00);
+uniform vec4 dark_eye : hint_color = vec4(0.05, 0.05, 0.06, 1.00);
+uniform vec4 skin : hint_color = vec4(0.84, 0.71, 0.58, 1.00);
+uniform vec4 dark_skin : hint_color = vec4(0.81, 0.62, 0.51, 1.00);
+uniform vec4 shirt : hint_color = vec4(0.56, 0.22, 0.24, 1.00);
+uniform vec4 pants : hint_color = vec4(0.42, 0.41, 0.36, 1.00);
+uniform vec4 dark_pants : hint_color = vec4(0.30, 0.29, 0.31, 1.00);
+uniform vec4 shoe : hint_color = vec4(0.57, 0.40, 0.30, 1.00);
+uniform vec4 dark_shoe : hint_color = vec4(0.47, 0.33, 0.25, 1.00);
+
+bool color_equals(vec4 c1, vec4 c2) {
+	return abs(c1.r - c2.r) < 0.02 && abs(c1.g - c2.g) < 0.02 && abs(c1.b - c2.b) < 0.02 && abs(c1.a - c2.a) < 0.02;
+}
+
+void fragment() {
+	vec4 current_color = texture(TEXTURE, UV);
+	
+	if (color_equals(current_color, original_eye)) {
+		COLOR = eye;
+	} else if (color_equals(current_color, original_dark_eye)) {
+		COLOR = dark_eye;
+	} else if (color_equals(current_color, original_skin)) {
+		COLOR = skin;
+	} else if (color_equals(current_color, original_dark_skin)) {
+		COLOR = dark_skin;
+	} else if (color_equals(current_color, original_shirt)) {
+		COLOR = shirt;
+	} else if (color_equals(current_color, original_pants)) {
+		COLOR = pants;
+	} else if (color_equals(current_color, original_dark_pants)) {
+		COLOR = dark_pants;
+	} else if (color_equals(current_color, original_shoe)) {
+		COLOR = shoe;
+	} else if (color_equals(current_color, original_dark_shoe)) {
+		COLOR = dark_shoe;
+	} else {
+		COLOR = current_color;
+	}
+}"
+
+[resource]
+resource_local_to_scene = true
+shader = SubResource( 84 )
+shader_param/eye = Color( 0.15, 0.27, 0.56, 1 )
+shader_param/dark_eye = Color( 0.05, 0.05, 0.06, 1 )
+shader_param/skin = Color( 0.84, 0.71, 0.58, 1 )
+shader_param/dark_skin = Color( 0.81, 0.62, 0.51, 1 )
+shader_param/shirt = Color( 0.56, 0.22, 0.24, 1 )
+shader_param/pants = Color( 0.42, 0.41, 0.36, 1 )
+shader_param/dark_pants = Color( 0.3, 0.29, 0.31, 1 )
+shader_param/shoe = Color( 0.57, 0.4, 0.3, 1 )
+shader_param/dark_shoe = Color( 0.47, 0.33, 0.25, 1 )
